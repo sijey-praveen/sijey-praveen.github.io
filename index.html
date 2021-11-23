@@ -21,12 +21,16 @@
             <div id="username"></div>
         </div>
         <script>
-            var avatar = document.cookie.split(";")[1].split("=")[1]
-            var username = document.cookie.split(";")[0].split("=")[1].split("@")[0]
-            document.getElementById("avatar").src = avatar
-            document.getElementById("username").innerText = username
-            document.title = `Welcome, ${username}`
-            document.getElementById("favicon").href = avatar
+            try {
+                var avatar = document.cookie.split(";")[1].split("=")[1]
+                var username = document.cookie.split(";")[0].split("=")[1].split("@")[0]
+                document.getElementById("avatar").src = avatar
+                document.getElementById("username").innerText = username
+                document.title = `Welcome, ${username}`
+                document.getElementById("favicon").href = avatar
+            } catch(err) {
+                window.location.replace("https://sijey-praveen.netlify.app/login")
+            }
         </script>
     </body>
 </html>
