@@ -80,8 +80,13 @@
                         $.get(`https://www.googleapis.com/oauth2/v3/userinfo?access_token=${access_token}`,
                             function(user_private) {
                                 var user_private = JSON.parse(JSON.stringify(user_private))
-                                document.cookie = `email=${user_private.email};sameSite=Lax`
-                                document.cookie = `avatar=${user_private.picture};sameSite=Lax`
+                                try {
+                                    document.cookie = `email=${user_private.email};sameSite=Lax`
+                                    document.cookie = `avatar=${user_private.picture};sameSite=Lax`
+                                    window.location.replace("https://sijey-praveen.netlify.app/")
+                                } catch(err) {
+                                    console.log(err)
+                                }
                             }
                         )
                     }
