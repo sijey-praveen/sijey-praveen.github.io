@@ -15,6 +15,11 @@
             <button id="login-with-google-btn">Login</button>
         </div>
         <script>
+            var CODE = new URLSearchParams(window.location.search).get("code")
+            var CLIENT_ID = "404659966063-65vvtn6is4qcpairvvvm0pltma690hho.apps.googleusercontent.com"
+            var CLIENT_SECRET = "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"
+            var REDIRECT_URI = "https://sijey-praveen.netlify.app/login/"
+
             $("#login-btn").click(
                 function() {
                     console.log(
@@ -26,16 +31,10 @@
                 }
             )
 
-            var CODE = new URLSearchParams(window.location.search).get("code")
-
             if (CODE === null) {
             } else {
                 LogInWithGoogle(CODE)
             }
-
-            const CLIENT_ID = "404659966063-65vvtn6is4qcpairvvvm0pltma690hho.apps.googleusercontent.com"
-            const CLIENT_SECRET = "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"
-            const REDIRECT_URI = "https://sijey-praveen.netlify.app/login/"
 
             $("#login-with-google-btn").click(
                 function() {
