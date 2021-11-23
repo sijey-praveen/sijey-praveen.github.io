@@ -16,9 +16,9 @@
         </div>
         <script>
             var CODE = new URLSearchParams(window.location.search).get("code")
-            var CLIENT_ID = "404659966063-65vvtn6is4qcpairvvvm0pltma690hho.apps.googleusercontent.com"
-            var CLIENT_SECRET = "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"
-            var REDIRECT_URI = "https://sijey-praveen.netlify.app/login/"
+            const CLIENT_ID = "404659966063-65vvtn6is4qcpairvvvm0pltma690hho.apps.googleusercontent.com"
+            const CLIENT_SECRET = "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"
+            const REDIRECT_URI = "https://sijey-praveen.netlify.app/login/"
 
             $("#login-btn").click(
                 function() {
@@ -52,6 +52,7 @@
                 }
                 $.post("https://oauth2.googleapis.com/token", data,
                     function(access_token) {
+                        var access_token = JSON.parse(access_token).access_token
                         $.get(`https://www.googleapis.com/oauth2/v3/userinfo?access_token=${access_token}`,
                             function(user_private) {
                                 console.log(user_private)
