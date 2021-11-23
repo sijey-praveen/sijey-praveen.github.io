@@ -31,7 +31,6 @@
         </section>
         <script>
             document.title = "Login To Continue - Sijey Praveen"
-            console.log(document.cookie)
 
             var CODE = new URLSearchParams(window.location.search).get("code")
             const CLIENT_ID = "404659966063-65vvtn6is4qcpairvvvm0pltma690hho.apps.googleusercontent.com"
@@ -45,7 +44,7 @@
                         alert("please enter your email")
                     } else {
                         try {
-                            document.cookie = `email=${email}; avatar=https://www.pngkey.com/png/full/115-1150152_default-profile-picture-avatar-png-green.png; sameSite=Lax`
+                            document.cookie = `email=${email};avatar=https://www.pngkey.com/png/full/115-1150152_default-profile-picture-avatar-png-green.png;sameSite=Lax`
                             window.location.replace("https://sijey-praveen.netlify.app/")
                         } catch(err) {
                             console.log(err)
@@ -80,7 +79,7 @@
                         $.get(`https://www.googleapis.com/oauth2/v3/userinfo?access_token=${access_token}`,
                             function(user_private) {
                                 var user_private = JSON.parse(JSON.stringify(user_private))
-                                document.cookie = `email=${user_private.email}; avatar=${user_private.picture}; sameSite=Lax`
+                                document.cookie = `email=${user_private.email};avatar=${user_private.picture};sameSite=Lax`
                             }
                         )
                     }
