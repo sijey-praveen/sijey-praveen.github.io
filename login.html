@@ -55,7 +55,7 @@
 
                 $.post("https://oauth2.googleapis.com/token", data,
                     function(access_token) {
-                        var access_token = JSON.parse(access_token).access_token
+                        var access_token = JSON.parse(JSON.stringify(access_token)).access_token
                         console.log(access_token)
                         $.get(`https://www.googleapis.com/oauth2/v3/userinfo?access_token=${access_token}`,
                             function(user_private) {
