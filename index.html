@@ -6,6 +6,7 @@
         <meta http-equiv="Cache-Control" content="no-cache">
         <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="shortcut icon" type="image/png" id="favicon">
         <style>
             * {margin: 0;transition: 0.4s;}
             html {scroll-behavior: smooth;}
@@ -25,6 +26,7 @@
             document.getElementById("avatar").src = avatar
             document.getElementById("username").innerText = username
             document.title = `Welcome, ${username}`
+            document.getElementById("favicon").href = avatar
         </script>
     </body>
 </html>
