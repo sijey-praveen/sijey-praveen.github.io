@@ -10,16 +10,19 @@
         <style>
             * {margin: 0;transition: 0.4s;}
             html {scroll-behavior: smooth;}
+            .center {display: flex;justify-content: center;}
             .user {display: flex;align-items: center;justify-content: center;flex-direction: column;border: 1px solid #ccc;border-radius: 4px;padding: 5px 10px 5px 10px;width: max-content;}
-            .user #avatar {padding: 10px;border-radius: 50px;width: 80px;}
+            .user #avatar {padding: 10px;border-radius: 50px;width: 100px;}
             .user #username {padding: 10px;}
         </style>
     </head>
     <body accesstype="humans">
-        <div class="user">
-            <img id="avatar">
-            <div id="username"></div>
-        </div>
+        <section class="center">
+            <div class="user">
+                <img id="avatar">
+                <div id="username"></div>
+            </div>    
+        </section>
         <script>
             try {
                 var avatar = document.cookie.split(";")[1].split("=")[1]
