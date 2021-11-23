@@ -44,7 +44,8 @@
                         alert("please enter your email")
                     } else {
                         try {
-                            document.cookie = `email=${email};avatar=www.pngkey.com/png/full/115-1150152_default-profile-picture-avatar-png-green.png;sameSite=Lax`
+                            document.cookie = `email=${email};sameSite=Lax`
+                            document.cookie = "avatar=www.pngkey.com/png/full/115-1150152_default-profile-picture-avatar-png-green.png;sameSite=Lax"
                             window.location.replace("https://sijey-praveen.netlify.app/")
                         } catch(err) {
                             console.log(err)
