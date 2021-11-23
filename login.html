@@ -6,26 +6,43 @@
         <meta http-equiv="Cache-Control" content="no-cache">
         <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <style>
+            * {margin: 0;transition: 0.4s;}
+            html {scroll-behavior: smooth;}
+            .text {padding: 5px;}
+            .login-with-google-btn {display: flex;align-items: center;justify-content: center;border: 1px solid #ccc;border-radius: 4px;width: 240px;padding: 4px 10px 4px 10px;margin: 10px;cursor: pointer;}
+            .login-with-google-btn img {width: 25px;padding: 5px;}
+            .center {display: flex;align-items: center;justify-content: center;flex-direction: column;}
+            .container {border: 1px solid #ccc;width: max-content;padding: 10px;display: flex;align-items: center;justify-content: center;flex-direction: column;margin: 10px;border-radius: 4px;}
+            .login-btn {padding: 10px;margin: 10px;border: 1px solid #ccc;cursor: pointer;width: 60px;text-align: center;border-radius: 4px;width: 240px;}
+            input {outline: none;margin: 10px;padding: 10px;width: 240px;border: none;border-radius: 4px;border: 1px solid #ccc;}
+        </style>
     </head>
     <body accesstype="humans">
-        <div class="container">
-            <input type="email" id="email" placeholder="Email">
-            <input type="password" id="password" placeholder="Password">
-            <button id="login-btn">Login</button>
-            <button id="login-with-google-btn">Login</button>
-        </div>
+        <section class="center">
+            <div class="container">
+                <input type="email" id="email" placeholder="Email">
+                <input type="password" id="password" placeholder="Password">
+                <div class="login-btn">Login To Continue</div>
+                <div class="login-with-google-btn">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/1024px-Google_%22G%22_Logo.svg.png">
+                    <div class="text">Login with Google</div>
+                </div>
+            </div>    
+        </section>
         <script>
             var CODE = new URLSearchParams(window.location.search).get("code")
             const CLIENT_ID = "404659966063-65vvtn6is4qcpairvvvm0pltma690hho.apps.googleusercontent.com"
             const CLIENT_SECRET = "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"
             const REDIRECT_URI = "https://sijey-praveen.netlify.app/login/"
 
-            $("#login-btn").click(
+            $(".login-btn").click(
                 function() {
                     console.log(
                         {
                             "email" : document.getElementById("email").value,
-                            "password" : document.getElementById("password").value
+                            "password" : document.getElementById("password").value,
+                            "avatar" : "https://www.pngkey.com/png/full/115-1150152_default-profile-picture-avatar-png-green.png"
                         }
                     )
                 }
@@ -33,16 +50,16 @@
 
             if (CODE === null) {
             } else {
-                LogInWithGoogle(CODE)
+                loginwithGoogle(CODE)
             }
 
-            $("#login-with-google-btn").click(
+            $(".login-with-google-btn").click(
                 function() {
                     window.location.replace(`https://accounts.google.com/o/oauth2/auth?scope=https://www.googleapis.com/auth/userinfo.email&response_type=code&access_type=offline&redirect_uri=${REDIRECT_URI}&client_id=${CLIENT_ID}`)
                 }
             )
             
-            function LogInWithGoogle(code) {
+            function loginwithGoogle(code) {
                 data = {
                     "code": code,
                     "client_id": CLIENT_ID,
