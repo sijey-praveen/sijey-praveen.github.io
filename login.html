@@ -22,7 +22,6 @@
         <section class="center">
             <div class="container">
                 <input type="email" id="email" placeholder="Email">
-                <input type="password" id="password" placeholder="Password">
                 <div class="login-btn">Login To Continue</div>
                 <div class="login-with-google-btn">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/1024px-Google_%22G%22_Logo.svg.png">
@@ -31,6 +30,8 @@
             </div>    
         </section>
         <script>
+            document.title = "Login To Continue - Sijey Praveen"
+
             var CODE = new URLSearchParams(window.location.search).get("code")
             const CLIENT_ID = "404659966063-65vvtn6is4qcpairvvvm0pltma690hho.apps.googleusercontent.com"
             const CLIENT_SECRET = "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"
@@ -38,13 +39,12 @@
 
             $(".login-btn").click(
                 function() {
-                    console.log(
-                        {
-                            "email" : document.getElementById("email").value,
-                            "password" : document.getElementById("password").value,
-                            "avatar" : "https://www.pngkey.com/png/full/115-1150152_default-profile-picture-avatar-png-green.png"
-                        }
-                    )
+                    var email = document.getElementById("email").value
+                    if (email === null) {
+                        alert("please enter your email")
+                    } else {
+                        document.cookie = `email=${email}; avatar=https://www.pngkey.com/png/full/115-1150152_default-profile-picture-avatar-png-green.png`
+                    }
                 }
             )
 
@@ -68,15 +68,13 @@
                     "grant_type": "authorization_code"
                 }
 
-                console.log(data)
-
                 $.post("https://oauth2.googleapis.com/token", data,
                     function(access_token) {
                         var access_token = JSON.parse(JSON.stringify(access_token)).access_token
-                        console.log(access_token)
                         $.get(`https://www.googleapis.com/oauth2/v3/userinfo?access_token=${access_token}`,
                             function(user_private) {
-                                console.log(user_private)
+                                var user_private = JSON.parse(JSON.stringify(user_private))
+                                document.cookie = `email=${user_private.email}; avatar=${user_private.picture}`
                             }
                         )
                     }
