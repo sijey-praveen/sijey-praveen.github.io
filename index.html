@@ -1,1 +1,30 @@
-<>
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="language" content="EN">
+        <meta http-equiv="Cache-Control" content="no-cache">
+        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <style>
+            * {margin: 0;transition: 0.4s;}
+            html {scroll-behavior: smooth;}
+            .user {display: flex;align-items: center;border: 1px solid #ccc;border-radius: 4px;padding: 5px 10px 5px 10px;width: max-content;}
+            .user #avatar {padding: 10px;border-radius: 50px;width: 40px;}
+            .user #username {padding: 10px;}
+        </style>
+    </head>
+    <body accesstype="humans">
+        <div class="user">
+            <img id="avatar">
+            <div id="username"></div>
+        </div>
+        <script>
+            var avatar = document.cookie.split(";")[1].split("=")[1]
+            var username = document.cookie.split(";")[0].split("=")[1].split("@")[0]
+            document.getElementById("avatar").src = avatar
+            document.getElementById("username").innerText = username
+            document.title = `Welcome, ${username}`
+        </script>
+    </body>
+</html>
