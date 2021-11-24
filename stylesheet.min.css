@@ -34,7 +34,7 @@ input {outline: none;margin: 10px;padding: 10px;width: 240px;border: none;border
 
 .comments {background: white;border-radius: 4px;border: 1px solid #ccc;padding: 10px;font-size: 14px;}
 
-.comments-content {display: flex;align-items: center;padding: 8px;border: 1px solid #ccc;border-radius: 50px;width: max-content;overflow: auto;}
+.comments-content {display: flex;align-items: center;padding: 5px;border: 1px solid #ccc;border-radius: 50px;width: max-content;overflow: auto;margin: 10px;}
 .comments-content img {width: 20px;padding: 5px;border-radius: 50px;}
 .comments-content .text {padding: 5px;color: green;}
 
