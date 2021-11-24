@@ -11,13 +11,17 @@ $(".login-btn").click(
         if (email === null) {
             alert("Please enter your Email!")
         } else {
-            try {
-                document.cookie = `email=${email};sameSite=Lax`
-                document.cookie = "avatar=https://www.pngkey.com/png/full/115-1150152_default-profile-picture-avatar-png-green.png;sameSite=Lax"
-                window.location.replace("https://sijey-praveen.netlify.app/")
-            } catch(err) {
-                console.log(err)
-            }                    
+            if (email.includes("@")) {
+                try {
+                    document.cookie = `email=${email};sameSite=Lax`
+                    document.cookie = "avatar=https://www.pngkey.com/png/full/115-1150152_default-profile-picture-avatar-png-green.png;sameSite=Lax"
+                    window.location.replace("https://sijey-praveen.netlify.app/")
+                } catch(err) {
+                    console.log(err)
+                }                        
+            } else {
+                alert("Enter a valid Email Address!")
+            }
         }
     }
 )
