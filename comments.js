@@ -30,10 +30,10 @@ document.getElementById("post-comment").addEventListener("click",
         try {
             var avatar = document.cookie.split(";")[1].split("=")[1]
             var username = document.cookie.split(";")[0].split("=")[1].split("@")[0]
+            var comment = {"username" : username, "text" : document.querySelector(".comment-text-feild").value, "avatar" : avatar}
+            update_comments(comment)    
         } catch(err) {
             window.location.replace("https://sijey-praveen.netlify.app/login")
         }
-        var comment = {"username" : username, "text" : document.querySelector(".comment-text-feild").value, "avatar" : avatar}
-        update_comments(comment)
     }
 )
