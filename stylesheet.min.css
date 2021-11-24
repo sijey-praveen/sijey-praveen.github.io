@@ -45,4 +45,4 @@ input {outline: none;margin: 10px;padding: 10px;width: 240px;border: none;border
 .highlight img {width: 15px;padding: 3px;}
 .highlight .text {padding: 3px;font-size: 12px;}
 
-@media screen and (max-width:500px) {:root {--blog-container-width: 280px;} .comment-text-feild {width: 180px;} .comments-content {display: block;} .comments-content .text {padding: 0;}}
+@media screen and (max-width:500px) {:root {--blog-container-width: 280px;} .comment-text-feild {width: 180px;} .comments-content {display: block;}}
