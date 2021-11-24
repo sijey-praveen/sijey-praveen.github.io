@@ -35,5 +35,6 @@ document.getElementById("post-comment").addEventListener("click",
         }
         var comment = {"username" : username, "text" : document.querySelector(".comment-text-feild").value, "avatar" : avatar}
         update_comments(comment)
+        console.log(document.cookie)
     }
 )
