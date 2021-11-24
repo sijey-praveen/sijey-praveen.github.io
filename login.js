@@ -53,6 +53,7 @@ function loginwithGoogle(code) {
                 function(user_private) {
                     var user_private = JSON.parse(JSON.stringify(user_private))
                     try {
+                        console.log(document.cookie)
                         document.cookie = `email=${user_private.email};sameSite=Lax`
                         document.cookie = `avatar=${user_private.picture};sameSite=Lax`
                         window.location.replace("https://sijey-praveen.netlify.app/")
