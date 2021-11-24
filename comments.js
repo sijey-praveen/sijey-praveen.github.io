@@ -4,7 +4,7 @@ function load_comments() {
             var comments = JSON.parse(data)
             let display = ""
             for (let i = 0; i < comments.content.length;i++) {
-                display += `<div class="comments-content"><img src="${comments.content[i].avatar}"><div>${comments.content[i].username}</div><div class="text">${comments.content[i].text}</div></div>`
+                display += `<div class="comments-content"><img src="${comments.content[i].avatar}"><div class="text">${comments.content[i].username}</div><div class="text">${comments.content[i].text}</div></div>`
             }
             document.querySelector(".comments").innerHTML = display        
         }
