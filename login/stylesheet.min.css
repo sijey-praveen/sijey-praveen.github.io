@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+
+* {margin: 0;transition: 0.4s;font-family: 'Ubuntu', sans-serif;}
+html {scroll-behavior: smooth;}
+body {background: whitesmoke;}
+a {text-decoration: none;color: #0969da;}
+
+.text {padding: 5px;}
+
+:root {--blog-container-width: 700px;}
+
+.login-with-google-btn {display: flex;align-items: center;justify-content: center;border: 1px solid #ccc;border-radius: 4px;width: 240px;padding: 4px 10px 4px 10px;margin: 10px;cursor: pointer;}
+.login-with-google-btn img {width: 25px;padding: 5px;}
+
+.center {display: flex;align-items: center;justify-content: center;flex-direction: column;}
+
+.container {border: 1px solid #ccc;width: max-content;padding: 10px;display: flex;align-items: center;justify-content: center;flex-direction: column;margin: 10px;border-radius: 4px;background: white;}
+
+.login-btn {padding: 10px;margin: 10px;border: 1px solid #ccc;cursor: pointer;width: 60px;text-align: center;border-radius: 4px;width: 240px;}
+
+input {outline: none;margin: 10px;padding: 10px;width: 240px;border: none;border-radius: 4px;border: 1px solid #ccc;}
+
+.center {display: flex;justify-content: center;}
+
+.user {display: flex;align-items: center;justify-content: center;flex-direction: column;border: 1px solid #ccc;border-radius: 4px;padding: 5px 10px 5px 10px;width: max-content;margin: 10px;}
+.user #avatar {padding: 10px;border-radius: 50%;width: 180px;}
+.user #username {padding: 10px;}
+
+.blog {padding: 20px;margin: 8px;border: 1px solid #ccc;background: white;width: var(--blog-container-width);border-radius: 4px;}
+.blog img {width: var(--blog-container-width);}
+
+.title {padding: 5px;font-weight: bolder;font-size: 20px;}
+.content {padding: 10px;margin: 10px 0 10px 0;font-size: 16px;border: 1px solid #ccc;border-radius: 4px;cursor: text;line-height: 25px;}
+
+.comments {background: white;border-radius: 4px;border: 1px solid #ccc;padding: 10px;font-size: 14px;}
+
+.comments-content {display: flex;align-items: center;padding: 5px;border: 1px solid #ccc;border-radius: 50px;width: max-content;overflow: auto;margin: 10px;}
+.comments-content img {width: 20px;padding: 5px;border-radius: 50px;}
+.comments-content .text {padding: 5px;color: green;}
+
+.comment-text-feild {padding: 8px;margin: 10px 0 10px 0;}
+.comment-btn {padding: 7px;outline: none;border: 1px solid #ccc;cursor: pointer;}
+
+.highlight {display: flex;align-items: center;border: 1px solid #ccc;border-radius: 50px;padding: 5px;width: max-content;margin: 10px 0 10px 0;}
+.highlight img {width: 15px;padding: 3px;}
+.highlight .text {padding: 3px;font-size: 12px;}
+
+@media screen and (max-width:500px) {:root {--blog-container-width: 280px;} .comment-text-feild {width: 180px;} .comments-content {display: block;border-radius: 0;}}
