@@ -2,7 +2,7 @@
 
 * {margin: 0;transition: 0.4s;font-family: 'Ubuntu', sans-serif;}
 html {scroll-behavior: smooth;}
-body {background: whitesmoke;}
+body {background: whitesmoke;display: flex;flex-direction: column;justify-content: center;align-items: center;}
 a {text-decoration: none;color: #0969da;}
 
 .text {padding: 5px;}
