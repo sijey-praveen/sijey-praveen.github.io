@@ -40,7 +40,7 @@ function loginwithGoogle(code) {
         "code": code,
         "client_id": CLIENT_ID,
         "client_secret": CLIENT_SECRET,
-        "redirect_uri": REDIRECT_URI,
+        "redirect_uri": window.location.href,
         "grant_type": "authorization_code"
     }
 
