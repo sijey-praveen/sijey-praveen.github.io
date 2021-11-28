@@ -33,8 +33,7 @@ document.getElementById("post-comment").addEventListener("click",
             var comment = {"username" : username, "text" : document.querySelector(".comment-text-feild").value, "avatar" : avatar}
             update_comments(comment)    
         } catch(err) {
-            console.log(document.cookie)
-            console.log(err)
+            console.warn(err)
             window.location.replace("#sign-in")
         }
     }
