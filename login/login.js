@@ -11,8 +11,8 @@ $(".login-btn").click(
         } else {
             if (email.includes("@")) {
                 try {
-                    document.cookie = `email=${email};sameSite=Lax`
-                    document.cookie = "avatar=https://www.pngkey.com/png/full/115-1150152_default-profile-picture-avatar-png-green.png;sameSite=Lax"
+                    document.cookie = `email=${email};sameSite=None`
+                    document.cookie = "avatar=https://www.pngkey.com/png/full/115-1150152_default-profile-picture-avatar-png-green.png;sameSite=None"
                     window.location.replace("https://sijey-praveen.netlify.app/")
                 } catch(err) {
                     console.log(err)
@@ -51,8 +51,8 @@ function loginwithGoogle(code) {
                 function(user_private) {
                     var user_private = JSON.parse(JSON.stringify(user_private))
                     try {
-                        document.cookie = `email=${user_private.email};sameSite=Lax`
-                        document.cookie = `avatar=${user_private.picture};sameSite=Lax`
+                        document.cookie = `email=${user_private.email};sameSite=None`
+                        document.cookie = `avatar=${user_private.picture};sameSite=None`
                         window.location.replace("https://sijey-praveen.netlify.app/")
                     } catch(err) {
                         console.log(err)
