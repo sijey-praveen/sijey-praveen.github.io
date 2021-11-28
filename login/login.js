@@ -31,7 +31,8 @@ if (CODE === null) {
 
 $(".login-with-google-btn").click(
     function() {
-        window.location.replace(`https://accounts.google.com/o/oauth2/auth?scope=https://www.googleapis.com/auth/userinfo.email&response_type=code&access_type=offline&redirect_uri=${REDIRECT_URI}&client_id=${CLIENT_ID}`)
+        console.log(`https://accounts.google.com/o/oauth2/auth?scope=https://www.googleapis.com/auth/userinfo.email&response_type=code&access_type=offline&redirect_uri=${REDIRECT_URI}&client_id=${CLIENT_ID}`)
+        // window.location.replace(`https://accounts.google.com/o/oauth2/auth?scope=https://www.googleapis.com/auth/userinfo.email&response_type=code&access_type=offline&redirect_uri=${REDIRECT_URI}&client_id=${CLIENT_ID}`)
     }
 )
 
