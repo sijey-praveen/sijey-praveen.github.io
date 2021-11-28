@@ -1,7 +1,7 @@
 var CODE = new URLSearchParams(window.location.search).get("code")
 const CLIENT_ID = "404659966063-65vvtn6is4qcpairvvvm0pltma690hho.apps.googleusercontent.com"
 const CLIENT_SECRET = "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"
-const REDIRECT_URI = window.location.href
+const REDIRECT_URI = "https://sijey-praveen.netlify.app/"
 
 $(".login-btn").click(
     function() {
@@ -13,7 +13,7 @@ $(".login-btn").click(
                 try {
                     document.cookie = `email=${email};sameSite=Lax`
                     document.cookie = "avatar=https://www.pngkey.com/png/full/115-1150152_default-profile-picture-avatar-png-green.png;sameSite=Lax"
-                    window.location.replace("#")
+                    window.location.replace("https://sijey-praveen.netlify.app/")
                 } catch(err) {
                     console.log(err)
                 }                        
@@ -31,8 +31,7 @@ if (CODE === null) {
 
 $(".login-with-google-btn").click(
     function() {
-        console.log(`https://accounts.google.com/o/oauth2/auth?scope=https://www.googleapis.com/auth/userinfo.email&response_type=code&access_type=offline&redirect_uri=${REDIRECT_URI}&client_id=${CLIENT_ID}`)
-        // window.location.replace(`https://accounts.google.com/o/oauth2/auth?scope=https://www.googleapis.com/auth/userinfo.email&response_type=code&access_type=offline&redirect_uri=${REDIRECT_URI}&client_id=${CLIENT_ID}`)
+        window.location.replace(`https://accounts.google.com/o/oauth2/auth?scope=https://www.googleapis.com/auth/userinfo.email&response_type=code&access_type=offline&redirect_uri=${REDIRECT_URI}&client_id=${CLIENT_ID}`)
     }
 )
 
@@ -54,7 +53,7 @@ function loginwithGoogle(code) {
                     try {
                         document.cookie = `email=${user_private.email};sameSite=Lax`
                         document.cookie = `avatar=${user_private.picture};sameSite=Lax`
-                        window.location.replace("#")
+                        window.location.replace("https://sijey-praveen.netlify.app/")
                     } catch(err) {
                         console.log(err)
                     }
