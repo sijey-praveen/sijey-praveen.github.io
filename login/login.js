@@ -1,7 +1,7 @@
 var CODE = new URLSearchParams(window.location.search).get("code")
 const CLIENT_ID = "404659966063-65vvtn6is4qcpairvvvm0pltma690hho.apps.googleusercontent.com"
 const CLIENT_SECRET = "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"
-const REDIRECT_URI = "https://sijey-praveen.netlify.app/login/"
+const REDIRECT_URI = window.location.href
 
 $(".login-btn").click(
     function() {
@@ -40,7 +40,7 @@ function loginwithGoogle(code) {
         "code": code,
         "client_id": CLIENT_ID,
         "client_secret": CLIENT_SECRET,
-        "redirect_uri": window.location.href,
+        "redirect_uri": REDIRECT_URI,
         "grant_type": "authorization_code"
     }
 
