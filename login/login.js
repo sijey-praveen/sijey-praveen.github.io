@@ -53,7 +53,8 @@ function loginwithGoogle(code) {
                     try {
                         document.cookie = `email=${user_private.email};sameSite=None`
                         document.cookie = `avatar=${user_private.picture};sameSite=None`
-                        window.location.replace("https://sijey-praveen.netlify.app/")
+                        console.log(document.cookie)
+//                         window.location.replace("https://sijey-praveen.netlify.app/")
                     } catch(err) {
                         console.log(err)
                     }
