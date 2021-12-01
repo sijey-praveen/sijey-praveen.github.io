@@ -16,8 +16,8 @@ body {background-image: url("img/desktop-wallpaper.jpg");background-position: ce
 
 .overlay-container {background-color: white;padding: 0 10px 10px 10px;border-radius: 4px;width: 700px;height: 500px;overflow: auto;margin: 70px auto;border: 1px solid #ccc;}
 
-.overlay {position: fixed;top: 0;bottom: 0;left: 0;right: 0;visibility: hidden;}
-.overlay:target {visibility: visible;}
+.overlay {position: fixed;top: 0;bottom: 0;left: 0;right: 0;display: none;}
+.overlay:target {display: block;}
 
 .title-bar {display: flex;align-items: center;position: fixed;background: white;width: 690px;padding: 5px 0 5px 0;}
 
