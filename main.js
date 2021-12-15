@@ -1,5 +1,5 @@
 const title_bar_action_btns = [".close-btn", ".minimize-btn", ".maximize-btn"]
-const hyperlink_action_btns = ["mail", "github", "telegram", "finder"]
+const hyperlink_action_btns = ["mail", "github", "telegram", "finder", "twitter"]
 
 document.addEventListener("DOMContentLoaded",
     function() {
@@ -33,6 +33,8 @@ document.addEventListener("DOMContentLoaded",
                         window.open("https://t.me/Sijeyme", "_blank")                    
                     } else if (hyperlink_action_btns[i] === "finder") {
                         window.location.replace("#readme")                    
+                    } else if (hyperlink_action_btns[i] === "twitter") {
+                        window.location.replace("https://twitter.com/sijey_praveen")
                     }
                 }
             )
