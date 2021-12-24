@@ -78,8 +78,6 @@ document.addEventListener("DOMContentLoaded", () => {
         )
     }
 
-    // $.get("https//api.sijey.repl.co/weather?location=san%20bruno", (data) => { document.querySelector(".weather").innerHTML = `${data.data}` })
-
     for (let i = 0;i < hyperlink.length;i++) {
         document.getElementById(hyperlink[i]).addEventListener("click", () => {
                 if (hyperlink[i] === "github") {
