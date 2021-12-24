@@ -8,7 +8,7 @@ body {background-image: url("img/desktop-wallpaper.jpg");background-position: ce
 .content {font-size: 14px;padding: 10px;}
 .center {display: flex;flex-direction: column;justify-content: center;align-items: center;}
 .overlay-container {background-color: white;border-radius: 4px;width: 1000px;height: 600px;overflow: auto;margin: 30px auto;}
-.overlay {position: fixed;top: 0;bottom: 0;left: 0;right: 0;display: none;}
+.overlay {top: 0;bottom: 0;left: 0;right: 0;display: none;}
 .overlay:target {display: block;}
 .main {margin: 30px 0 0 0;}
 .main img {width: 150px;padding: 15px;}
@@ -26,7 +26,7 @@ body {background-image: url("img/desktop-wallpaper.jpg");background-position: ce
 .social {padding: 10px;}
 .social img {width: 40px;padding: 10px;cursor: pointer;}
 .spotify {width: 1000px;height: 600px;}
-.youtube {width: 1000px;height: 600px;}
+.youtube {width: 1000px;height: 570px;}
 .applemusic {width: 1000px;height: 600px;}
 .settings {padding: 20px;border-radius: 5px;}
 .settings img {width: 200px;cursor: pointer;padding: 5px;}
