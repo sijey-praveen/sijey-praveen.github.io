@@ -25,8 +25,8 @@ body {background-image: url("img/desktop-wallpaper.jpg");background-position: ce
 .communicative-language {padding: 10px;}
 .social {padding: 10px;}
 .social img {width: 40px;padding: 10px;cursor: pointer;}
-.spotify {width: 1000px;height: 600px;position: fixed;}
-.youtube {width: 1000px;height: 570px;position: fixed;}
+.spotify {width: 1000px;height: 600px;}
+.youtube {width: 1000px;height: 600px;}
 .applemusic {width: 1000px;height: 600px;}
 .settings {padding: 20px;border-radius: 5px;}
 .settings img {width: 200px;cursor: pointer;padding: 5px;}
