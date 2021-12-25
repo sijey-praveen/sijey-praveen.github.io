@@ -87,19 +87,9 @@
 </head>
 
 <body>
-  <main></main>
   <button>start</button>
   <div id="transcript"></div>
   <script>
-
-    document.querySelector("button").addEventListener("click", () => {
-      init()
-      stt((data) => {
-            if (data.includes("hey google")) {
-              document.getElementById("transcript").innerText = data.replace("hey jarvis", "")
-            }
-        })
-    })
 
     function stt(callback) {
         var noteContent = ""
@@ -117,6 +107,14 @@
         }
         recognition.start()
     }
+
+    document.querySelector("button").addEventListener("click", () => {
+      stt((data) => {
+            if (data.includes("hey google")) {
+              document.getElementById("transcript").innerText = data.replace("hey jarvis", "")
+            }
+        })
+    })
 
   class AudioVisualizer {
     constructor(audioContext, processFrame, processError) {
@@ -214,6 +212,7 @@
 
     startTranscriptions()
   };
+  init()
 </script>
 </body>
 </html>
