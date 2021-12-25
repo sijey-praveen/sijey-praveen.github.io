@@ -110,7 +110,7 @@
 
     document.querySelector("button").addEventListener("click", () => {
       stt((data) => {
-            if (data.includes("hey google")) {
+            if (data.includes("hey jarvis")) {
               document.getElementById("transcript").innerText = data.replace("hey jarvis", "")
             }
         })
