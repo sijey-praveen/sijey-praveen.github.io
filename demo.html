@@ -87,15 +87,16 @@
 </head>
 
 <body>
-  <main>
-    <button onclick="init()">start</button>
-  </main>
+  <main></main>
+  <button>start</button>
   <div id="transcript"></div>
   <script>
 
     document.querySelector("button").addEventListener("click", () => {
-        stt((data) => {
-            document.getElementById("transcript").innerText = data
+      stt((data) => {
+            if (data.includes("hey google")) {
+              document.getElementById("transcript").innerText = data.replace("hey jarvis", "")
+            }
         })
     })
 
@@ -212,14 +213,7 @@
 
     startTranscriptions()
   };
-
-  while (true) {
-    stt((data) => {
-            if (data.includes("hey google")) {
-              document.getElementById("transcript").innerText = data
-            }
-        })
-  }
+  init()
 </script>
 </body>
 </html>
