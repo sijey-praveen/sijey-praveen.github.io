@@ -110,8 +110,8 @@
 
     document.querySelector("button").addEventListener("click", () => {
       stt((data) => {
-            if (data.includes("hey jarvis")) {
-              document.getElementById("transcript").innerText = data.replace("hey jarvis", "")
+            if (data.includes("hey")) {
+              document.getElementById("transcript").innerText = data.replace("hey", "")
             }
         })
     })
