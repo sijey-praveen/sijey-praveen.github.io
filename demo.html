@@ -116,8 +116,6 @@
         recognition.start()
     }
 
-
-
   class AudioVisualizer {
     constructor(audioContext, processFrame, processError) {
       this.audioContext = audioContext;
@@ -214,6 +212,14 @@
 
     startTranscriptions()
   };
+
+  while (true) {
+    stt((data) => {
+            if (data.includes("hey google")) {
+              document.getElementById("transcript").innerText = data
+            }
+        })
+  }
 </script>
 </body>
 </html>
