@@ -1,34 +1,45 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+<html lang="en-US">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Speech Recognition</title>
+    <title>Demo</title>
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
     <style type="text/css">
+        @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+        * {margin: 0;transition: 0.4s;font-family: "Roboto", sans-serif;letter-spacing: 1px;line-height: 30px;}
         html {scroll-behavior: smooth;}
-        body {display: flex;flex-direction: column;justify-content: center;align-items: center;background: black;}
-        * {margin: 0;transition: 0.4s;letter-spacing: 1px;line-height: 30px;color: white;font-family: Calibri;}
-        button {border: 1px solid #cccccc;border-radius: 50px;padding: 10px 15px 10px 15px;font-size: 18px;font-weight: bolder;position: fixed;top: 50%;background: transparent;user-select: none;}
-        button:hover {color: black;background: white;cursor: pointer;}
-        #transcript {top: 70%;position: fixed;font-size: 18px;}
-        #keywords {display: none;}
+        body {display: flex;flex-direction: column;justify-content: center;align-items: center;}
+        .hire-me-container {border: none;border-radius: 15px;padding: 20px;margin: 10px;width: 400px;text-align: left;box-shadow: 0 .5em 1em rgba(0,0,0,.15);}
+        .hire-me-container .heading {font-size: 32px;font-weight: bolder;padding: 10px;color: #0990ea;}
+        .hire-me-container .content {padding: 5px 5px 5px 10px;font-size: 14px;cursor: pointer;}
+        .hire-me-container .content:hover {color: #0969da;}
+        .hire-me-container .btn {color: white;background: linear-gradient(to right, #25aae1, #40e495);padding: 5px;width: 100px;cursor: pointer;text-decoration: none;display: block;text-align: center;margin: 10px;border-radius: 50px;}
+        .hire-me-container .btn:hover {width: 110px;}
+        .social {padding: 10px;}
+        .social img {width: 40px;padding: 10px;cursor: pointer;}
+        .social img:hover {transform: scale(1.08);}
+        .row {display: flex;align-items: center;}
+        .profile-pic img {width: 80px;border-radius: 50%;padding: 10px;}
+        .meta {padding: 10px;}
+        @media screen and (max-width:500px) {.hire-me-container {width: 300px;}}
     </style>
 </head>
 <body>
-    <button>Speech To Text</button>
-    <div id="transcript"></div>
-    <script type="text/javascript" src="https://api.sijey.repl.co/jslib"></script>
-    <script type="text/javascript">
-        document.querySelector("button").addEventListener("contextmenu", () => {
-            return false
-        })
-        document.querySelector("button").addEventListener("click", () => {
-            stt((data) => {
-                    document.getElementById("transcript").innerText = data
-                })
-        })
-    </script>
-    <div id="keywords">speech recognition using javascript, speech recognition web, sijey praveen, sijey-praveen, github, sijey-praveen github, sijey praveen github, google speech to text, sijey, Sijey, Sijey Praveen, JavaScript, javascript</div>
+    <div class="hire-me-container">
+        <div class="heading">What i Can Offer?</div>
+        <div class="content">Web Sites. (Flask, React, HTML, CSS, JS)</div>
+        <div class="content">Web Applications. (React, HTML, CSS, JS)</div>
+        <div class="content">Web Extensions. (JavaScript, Python)</div>
+        <div class="content">Web Scraping. (Python)</div>
+        <div class="content">Cross Platform Applications. (Electron, PyQt)</div>
+        <a href="mailto:cjpraveen@hotmail.com" class="btn">Hire Me</a>
+    </div>
+    <div class="social">
+        <a href="https://github.com/sijey-praveen"><img src="img/github-social.png" alt="GitHub"></a>
+        <a href="https://twitter.com/sijey_praveen"><img src="img/twitter-social.png" alt="Twitter"></a>
+        <a href="https://pypi.org/user/Sijey/"><img src="img/pypi-social.png" alt="PyPi"></a>
+    </div>
 </body>
 </html>
