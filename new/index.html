@@ -15,11 +15,16 @@
         :root {--dark-fan-coral-red:#b11d22;--dark-fan-water-blue:#3b8aa9;--dark-fan-night-navy:#031931;}
         .banner {background: url("img/banner.jpeg");background-position: center;background-repeat: no-repeat;background-size: cover;height: 400px;background-attachment: fixed;}
         .center {display: flex;flex-direction: column;justify-content: center;align-items: center;}
-        .aboutme {border-radius: 15px;padding: 150px;margin: 10px;height: 300px;box-shadow: 0 4px 15px 0 rgba(45, 54, 65, 0.75);background: linear-gradient(to right, var(--dark-fan-night-navy), #181818);}
-        .aboutme:hover {background: linear-gradient(to right, #181818, var(--dark-fan-night-navy));}
-        .courses {border-radius: 15px;padding: 150px;margin: 10px;height: 300px;box-shadow: 0 4px 15px 0 rgba(229, 66, 10, 0.75);background: linear-gradient(to right, var(--dark-fan-coral-red), #181818);}
+        .aboutme {border-radius: 15px;padding: 100px 150px 50px 150px;margin: 10px;box-shadow: 0 4px 15px 0 rgba(45, 54, 65, 0.75);background: linear-gradient(to right, rgba(15,2,2,1), rgba(36,163,190,1));}
+        .aboutme:hover {background: linear-gradient(to right, #181818, var(--dark-fan-water-blue));}
+        .courses {border-radius: 15px;padding: 100px 150px 50px 150px;margin: 10px;box-shadow: 0 4px 15px 0 rgba(229, 66, 10, 0.75);background: linear-gradient(to right, var(--dark-fan-coral-red), #181818);}
         .courses:hover {background: linear-gradient(to right, #181818, var(--dark-fan-coral-red));}
-        .projects {border-radius: 15px;padding: 150px;margin: 10px;height: 300px;box-shadow: 0 4px 15px 0 rgba(229, 66, 10, 0.75);background: linear-gradient(to right, rgb(194, 0, 39), rgb(10, 35, 104));}
+        .products {border-radius: 15px;padding: 50px;margin: 10px;background: white;box-shadow: 0 4px 15px 0 rgba(45, 54, 65, 0.75);border: 1px solid #cccccc;}
+        .products .items {display: flex;align-items: center;border: 1px solid #ccc;border-radius: 8px;width: max-content;padding: 5px;}
+        .products .items img {width: 80px;}
+        /* .products .items .meta {display: block;white-space: pre-line;} */
+        .products .items .btn {background: #efeff4;color: #0070c9;}
+        .projects {border-radius: 15px;padding: 100px 150px 100px 150px;margin: 10px;box-shadow: 0 4px 15px 0 rgba(229, 66, 10, 0.75);background: linear-gradient(to right, rgb(194, 0, 39), rgb(10, 35, 104));}
         .projects .content {white-space: normal;}
         .projects .sub-heading {padding: 30px 0 10px 0;}
         .projects:hover {background: linear-gradient(to right, rgb(10, 35, 104), rgb(194, 0, 39));}
@@ -32,7 +37,7 @@
         .social {display: flex;align-items: center;}
         .social img {width: 30px;padding: 15px 15px 0 0;cursor: pointer;}
         a {text-decoration: underline;color: white;}
-        @media screen and (max-width:500px) {.aboutme {padding: 50px 30px 20px 30px;height: max-content;} .courses {padding: 50px 30px 20px 30px;height: max-content;} .projects {padding: 50px 30px 20px 30px;height: max-content;} .bre {padding: 0 0 0 10px;}}
+        @media screen and (max-width:500px) {.aboutme {padding: 50px 30px 20px 30px;} .courses {padding: 50px 30px 20px 30px;} .projects {padding: 50px 30px 20px 30px;} .bre {padding: 0 0 0 10px;}}
     </style>
 </head>
 <body>
@@ -68,6 +73,16 @@
             An unofficial YouTube Music API For Python Programming Language.
             <div class="sub-heading">Voice Assistant (Beta)</div>
             A Web based Open-source Voice Assistant Project.
+        </div>
+    </div>
+    <div class="products">
+        <div class="items">
+            <img src="https://media.macosicons.com/parse/files/macOSicons/3a0b463b1ec4f2e52804ed56231826d4_low_res_Notability.png">
+            <div>
+                <div class="meta"><b>PaperPro</b></div>
+                <div class="meta">Web Text Editor.</div>
+            </div>
+            <div class="btn">VIEW</div>
         </div>
     </div>
     <div class="courses">
