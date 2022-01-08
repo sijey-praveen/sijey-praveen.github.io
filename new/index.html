@@ -1,0 +1,95 @@
+<!-- Sijey (c) 2022, All Rights Reserved. -->
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sijey Praveen</title>
+    <link rel="shortcut icon" href="https://avatars.githubusercontent.com/u/80583308" type="image/png">
+    <style type="text/css">
+        @font-face {font-family: "Roboto Condensed";src: url("fonts/RobotoCondensed-Regular.ttf") format("truetype");}
+        @font-face {font-family: "Bebas Neue";src: url("fonts/BebasNeue-Regular.ttf") format("truetype");}
+        @font-face {font-family: "Mulish";src: url("fonts/Mulish-Regular.ttf") format("truetype");}
+        * {margin: 0;transition: 0.4s;line-height: 30px;scroll-behavior: smooth;}
+        :root {--dark-fan-coral-red:#b11d22;--dark-fan-water-blue:#3b8aa9;--dark-fan-night-navy:#031931;}
+        .banner {background: url("img/banner.jpeg");background-position: center;background-repeat: no-repeat;background-size: cover;height: 400px;background-attachment: fixed;}
+        .center {display: flex;flex-direction: column;justify-content: center;align-items: center;}
+        .aboutme {border-radius: 15px;padding: 150px;margin: 10px;height: 300px;box-shadow: 0 4px 15px 0 rgba(45, 54, 65, 0.75);background: linear-gradient(to right, var(--dark-fan-night-navy), #181818);}
+        .aboutme:hover {background: linear-gradient(to right, #181818, var(--dark-fan-night-navy));}
+        .courses {border-radius: 15px;padding: 150px;margin: 10px;height: 300px;box-shadow: 0 4px 15px 0 rgba(229, 66, 10, 0.75);background: linear-gradient(to right, var(--dark-fan-coral-red), #181818);}
+        .courses:hover {background: linear-gradient(to right, #181818, var(--dark-fan-coral-red));}
+        .projects {border-radius: 15px;padding: 150px;margin: 10px;height: 300px;box-shadow: 0 4px 15px 0 rgba(229, 66, 10, 0.75);background: linear-gradient(to right, rgb(194, 0, 39), rgb(10, 35, 104));}
+        .projects .content {white-space: normal;}
+        .projects .sub-heading {padding: 30px 0 10px 0;}
+        .projects:hover {background: linear-gradient(to right, rgb(10, 35, 104), rgb(194, 0, 39));}
+        .heading {font-size: 60px;font-family: "Bebas Neue";color: white;letter-spacing: 1px;}
+        .sub-heading {font-size: 40px;font-family: "Bebas Neue";color: white;letter-spacing: 1px;}
+        .bre {padding: 0 0 0 50px;color: #f5f5f5;font-family: Calibri;}
+        .content {white-space: pre-line;color: white;font-weight: 600;font-family: "Mulish";font-size: 20px;letter-spacing: 1px;}
+        .btn {color: black;background: white;padding: 5px 15px 5px 15px;border-radius: 50px;width: max-content;font-size: 16px;font-weight: 600;font-family: "Roboto Condensed";margin: 15px 0 0 0;cursor: pointer;transition: 0.2s;}
+        .btn:hover {transform: scale(1.08);}
+        .social {display: flex;align-items: center;}
+        .social img {width: 30px;padding: 15px 15px 0 0;cursor: pointer;}
+        a {text-decoration: underline;color: white;}
+        @media screen and (max-width:500px) {.aboutme {padding: 50px 30px 20px 30px;height: max-content;} .courses {padding: 50px 30px 20px 30px;height: max-content;} .projects {padding: 50px 30px 20px 30px;height: max-content;} .bre {padding: 0 0 0 10px;}}
+    </style>
+</head>
+<body>
+    <div class="banner">
+        <div class="center">
+        </div>
+    </div>
+    <div class="aboutme">
+        <div class="heading">About</div>
+        <div class="content">
+            Hello, I'm CJ Praveen. (Male)
+            People call me as 'Sijey' or 'CJ'.
+            I'am a Student doing Diploma in Computer Science Engineering.
+            Started the Programming / Coding Journey at 2020, Between the past 2 years I learned Python, JavaScript, HTML, CSS.
+            Python / JavaScript are my Core languages.
+            I Develop Python Packages, Websites, Web Apps, JavaScript Libraries, Flask Apps, PyQt Cross-platform Applications.
+            I Speak Tamil and English.
+            You Can Contact me via <a href="mailto:cjpraveen@hotmail.com">Email</a> and Discord (Sijey#9115)
+            <div class="social">
+                <img src="img/github.svg" url="https://github.com/sijey-praveen">
+                <img src="img/twitter.svg" url="https://twitter.com/sijey_praveen">
+                <img src="img/pypi.svg" url="https://pypi.org/user/Sijey">
+            </div>
+        </div>
+    </div>
+    <div class="projects">
+        <div class="heading">Projects</div>
+        <div class="bre">Built using HTML, CSS, JavaScript, Python.</div>
+        <div class="content">
+            <div class="sub-heading">PaperPro (Beta)</div>
+            A Lightweight web based Open-source Text Editor.
+            <div class="sub-heading">YouTubeMusicAPI</div>
+            An unofficial YouTube Music API For Python Programming Language.
+            <div class="sub-heading">Voice Assistant (Beta)</div>
+            A Web based Open-source Voice Assistant Project.
+        </div>
+    </div>
+    <div class="courses">
+        <div class="heading">Courses</div>
+        <div class="bre">Step up your front-end game</div>
+        <div class="content">
+            I Offer Premium Courses for Cheaper Prices
+
+            Python Programming Language Basics Course - Start Learning Today at Just ₹119
+            <div class="btn">Visit Course</div>
+            PyQt GUI Framework Basics Course - Start Learning Today at Just ₹249
+            <div class="btn">Visit Course</div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        const socialbtns = document.querySelectorAll(".social img")
+        
+        for (let i = 0;i < socialbtns.length; i++) {
+            socialbtns[i].addEventListener("click", () => {
+                window.open(socialbtns[i].getAttribute("url"), "_blank")
+            })
+        }
+    </script>
+</body>
+</html>
