@@ -16,11 +16,11 @@
         .banner {background: url("img/banner.jpeg");background-position: center;background-repeat: no-repeat;background-size: cover;height: 400px;background-attachment: fixed;}
         .center {display: flex;flex-direction: column;justify-content: center;align-items: center;}
         .aboutme {border-radius: 15px;padding: 100px 150px 50px 150px;margin: 10px;box-shadow: 0 4px 15px 0 rgba(45, 54, 65, 0.75);background: linear-gradient(to right, rgba(15,2,2,1), rgba(36,163,190,1));}
-        .aboutme:hover {background: linear-gradient(to right, #181818, var(--dark-fan-water-blue));}
+        .aboutme:hover {background: linear-gradient(to right, rgba(36,163,190,1), #181818);}
         .courses {border-radius: 15px;padding: 100px 150px 50px 150px;margin: 10px;box-shadow: 0 4px 15px 0 rgba(229, 66, 10, 0.75);background: linear-gradient(to right, var(--dark-fan-coral-red), #181818);}
         .courses:hover {background: linear-gradient(to right, #181818, var(--dark-fan-coral-red));}
-        .products {border-radius: 15px;padding: 50px;margin: 10px;background: white;box-shadow: 0 4px 15px 0 rgba(45, 54, 65, 0.75);border: 1px solid #cccccc;}
-        .products .items {display: flex;align-items: center;border: 1px solid #ccc;border-radius: 8px;width: max-content;padding: 5px;}
+        .products {border-radius: 15px;padding: 50px;margin: 10px;background: white;box-shadow: 0 4px 15px 0 rgba(45, 54, 65, 0.75);border: 1px solid #cccccc;display: flex;flex-flow: row wrap;}
+        .products .items {display: flex;align-items: center;border: 1px solid #ccc;border-radius: 8px;width: max-content;padding: 5px;margin: 10px;}
         .products .items img {width: 80px;}
         .products .items .btn {background: #efeff4;color: #0070c9;line-height: 20px;margin: 10px;}
         .products .items .meta {line-height: 20px;}
@@ -37,7 +37,7 @@
         .social {display: flex;align-items: center;}
         .social img {width: 30px;padding: 15px 15px 0 0;cursor: pointer;}
         a {text-decoration: underline;color: white;}
-        @media screen and (max-width:500px) {.aboutme {padding: 50px 30px 20px 30px;} .courses {padding: 50px 30px 20px 30px;} .projects {padding: 50px 30px 20px 30px;} .bre {padding: 0 0 0 10px;}}
+        @media screen and (max-width:500px) {.aboutme {padding: 50px 30px 20px 30px;} .courses {padding: 50px 30px 20px 30px;} .projects {padding: 50px 30px 20px 30px;} .products {padding: 10px;justify-content: center;} .bre {padding: 0 0 0 10px;}}
     </style>
 </head>
 <body>
@@ -57,13 +57,13 @@
             I Speak Tamil and English.
             You Can Contact me via <a href="mailto:cjpraveen@hotmail.com">Email</a> and Discord (Sijey#9115)
             <div class="social">
-                <img src="img/github.svg" url="https://github.com/sijey-praveen">
-                <img src="img/twitter.svg" url="https://twitter.com/sijey_praveen">
-                <img src="img/pypi.svg" url="https://pypi.org/user/Sijey">
+                <img id="hyplk" src="img/github.svg" url="https://github.com/sijey-praveen">
+                <img id="hyplk" src="img/twitter.svg" url="https://twitter.com/sijey_praveen">
+                <img id="hyplk" src="img/pypi.svg" url="https://pypi.org/user/Sijey">
             </div>
         </div>
     </div>
-    <div class="projects">
+    <!-- <div class="projects">
         <div class="heading">Projects</div>
         <div class="bre">Built using HTML, CSS, JavaScript, Python.</div>
         <div class="content">
@@ -74,15 +74,31 @@
             <div class="sub-heading">Voice Assistant (Beta)</div>
             A Web based Open-source Voice Assistant Project.
         </div>
-    </div>
+    </div> -->
     <div class="products">
         <div class="items">
-            <img src="https://media.macosicons.com/parse/files/macOSicons/3a0b463b1ec4f2e52804ed56231826d4_low_res_Notability.png">
+            <img src="https://media.macosicons.com/parse/files/macOSicons/244e8a5a94eb04ab3b615e0e2482593b_Text_Edit.png">
             <div>
                 <div class="meta"><b>PaperPro</b></div>
-                <div class="meta">Web Text Editor.</div>
+                <div class="meta">Web Application</div>
             </div>
-            <div class="btn">VIEW</div>
+            <div id="hyplk" class="btn" url="https://paperpro.netlify.app/">VIEW</div>
+        </div>
+        <div class="items">
+            <img src="https://media.macosicons.com/parse/files/macOSicons/a7278038be8dd85bc1da4d0928280367_low_res_YouTube_Music.png">
+            <div>
+                <div class="meta"><b>YouTubeMusicAPI</b></div>
+                <div class="meta">Python Package</div>
+            </div>
+            <div id="hyplk" class="btn" url="https://pypi.org/project/YouTubeMusicAPI/">VIEW</div>
+        </div>
+        <div class="items">
+            <img src="https://media.macosicons.com/parse/files/macOSicons/b0bf366b7d6cb78ca99cafb13406abd6_Spotify.png">
+            <div>
+                <div class="meta"><b>Spotify2py</b></div>
+                <div class="meta">Python Package</div>
+            </div>
+            <div id="hyplk" class="btn" url="https://pypi.org/project/spotify2py/">VIEW</div>
         </div>
     </div>
     <div class="courses">
@@ -98,11 +114,11 @@
         </div>
     </div>
     <script type="text/javascript">
-        const socialbtns = document.querySelectorAll(".social img")
+        const hyplk = document.querySelectorAll("#hyplk")
         
-        for (let i = 0;i < socialbtns.length; i++) {
-            socialbtns[i].addEventListener("click", () => {
-                window.open(socialbtns[i].getAttribute("url"), "_blank")
+        for (let i = 0;i < hyplk.length; i++) {
+            hyplk[i].addEventListener("click", () => {
+                window.open(hyplk[i].getAttribute("url"), "_blank")
             })
         }
     </script>
