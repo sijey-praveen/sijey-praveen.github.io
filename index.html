@@ -1,36 +1,102 @@
+<!-- 
+Sijey (c) 2022, All Rights Reserved. 
+Designed and Developed by Sijey.
+-->
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/stylesheet.min.css">
-        <title>Portfolio</title>
-    </head>
-    <body>
-        <section class="application-tray">
-            <img class="hyplks" id="finder" src="img/Finder.png">
-            <img class="hyplks" url="mailto:cjpraveen@hotmail.com" id="mail" src="img/Mail.png">
-            <img class="hyplks" url="https://github.com/sijey-praveen" id="github" src="img/Github_Desktop.png">
-            <img class="hyplks" url="" src="img/Discord.png">
-            <img class="hyplks" url="https://twitter.com/sijey_praveen" id="twitter" src="img/Twitter.png">
-            <img class="hyplks" url="" src="img/LinkedIn.png">
-            <img class="hyplks" url="https://t.me/Sijeyme" id="telegram" src="img/Telegram.png">
-            <img class="hyplks" id="spotify" src="img/Spotify.png">
-            <img class="hyplks" id="settings" src="img/Settings.png">
-        </section>
-        <section id="window" class="overlay">
-            <div class="overlay-container">
-                <div class="title-bar">
-                    <div class="close-btn"></div>
-                    <div class="minimize-btn"></div>
-                    <div class="maximize-btn"></div>
-                </div>
-                <div class="main"></div>
+<html lang="en-US" oncontextmenu="return false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sijey Praveen</title>
+    <link rel="shortcut icon" href="https://avatars.githubusercontent.com/u/80583308" type="image/png">
+    <style type="text/css">
+        @font-face {font-family: "Mulish";src: url("fonts/Mulish-Regular.ttf") format("truetype");}
+        @font-face {font-family: "Roboto Mono";src: url("fonts/RobotoMono-Regular.ttf") format("truetype");}
+        @font-face {font-family: "Comforter Brush";src: url("fonts/ComforterBrush-Regular.ttf") format("truetype");}
+        @font-face {font-family: "Mochiy Pop P One";src: url("fonts/MochiyPopPOne-Regular.ttf") format("truetype");}
+        * {margin: 0;scroll-behavior: smooth;transition: 0.6s;letter-spacing: 1px;user-select: none;overflow: auto;-ms-overflow-style: none;scrollbar-width: none;}
+        *::-webkit-scrollbar {display: none;}
+        body {background: #10101a;color: white;}
+        .session {padding: 200px;line-height: 30px;}
+        .session svg {width: 30px;cursor: pointer;padding: 0 0 0 10px;}
+        .svg {margin: 20px 0 0 50px;}
+        .comforterbrushtxt  {font-size: 90px;font-family: "Comforter Brush";font-weight: 600;padding: 5px;line-height: 130px;color: transparent;background: linear-gradient(180deg, rgba(255,94,247,1), rgba(2,245,255,1));background-clip: text;}
+        .msg {font-size: 18px;color: grey;font-family: "Mulish";padding: 5px;}
+        .small-txt {padding: 0 0 0 120px;color: grey;font-family: "Mulish";font-size: 14px;}
+        .title {font-size: 30px;font-family: "Mochiy Pop P One";font-weight: 600;padding: 5px;line-height: normal;}
+        .underline {height: 3px;background: white;width: 50px;border-radius: 50px;}
+        .typing {background: white;height: 25px;width: 3px;opacity: 0;margin: 0 10px 0 10px;}
+        .content {white-space: pre-line;color: grey;font-family: "Roboto Mono";padding: 10px 10px 10px 60px;}
+        @media screen and (max-width:500px) {.session {padding: 120px 50px 120px 50px;} .content {padding: 10px;} .small-txt {padding: 0 0 0 20px;font-size: 10px;} .svg {margin: 10px 0 0 0;}}
+    </style>
+</head>
+<body>
+    <div class="session">
+        <div class="msg">Hey There!</div>
+        <div class="comforterbrushtxt">I'm Sijey Praveen.</div>
+        <div class="small-txt">Student, Programmer, Coder, Web Developer.</div>
+    </div>
+    <div class="session">
+        <div class="title">About Me</div>
+        <div class="underline" default="50px" transform="180px"></div>
+        <div class="content">
+            I'am a Student doing Diploma in Computer Science Engineering.
+            Python, JavaScript Programmer & Coder, Web Developer.
+            Started the Programming and Coding Journey at 2020, Between the past 2 years I learned Python, JavaScript, HTML, CSS.
+            Python and JavaScript are my Core languages.
+            I Develop Python Packages, Websites, Web Apps, Flask Apps, Cross-platform Applications.
+            I Speak Tamil and English.
+            I Would like to spend my night with horror movies 😜.
+            <div style="display: flex;align-items: center;">
+                <div>I ❤️ Open-source.</div>
+                <div class="typing"></div>
             </div>
-        </section>
-        <span id="autofullscreen" onclick="document.documentElement.requestFullscreen()" hidden></span>
-        <script src="js/components.js"></script>
-        <script src="js/main.js"></script>
-    </body>
+        </div>
+        <div class="svg">
+            <svg id="hyplk" redirect="https://github.com/sijey-praveen/" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>GitHub</title><path fill="#ffffff" d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+            <svg id="hyplk" redirect="https://pypi.org/user/Sijey" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>PyPI</title><path  fill="#ffffff" d="M23.922 13.58v3.912L20.55 18.72l-.078.055.052.037 3.45-1.256.026-.036v-3.997l-.053-.036-.025.092z M23.621 5.618l-3.04 1.107v3.912l3.339-1.215V5.509zM23.92 13.457V9.544l-3.336 1.215v3.913zM20.47 14.71V10.8L17.17 12v3.913zM17.034 19.996v-3.912l-3.313 1.206v3.912zM17.17 16.057v3.868l3.314-1.206V14.85l-3.314 1.206zm2.093 1.882c-.367.134-.663-.074-.663-.463s.296-.814.663-.947c.365-.133.662.075.662.464s-.297.814-.662.946z M13.225 9.315l.365-.132-3.285-1.197-3.323 1.21.102.037 3.184 1.16zM20.507 10.664V6.751L17.17 7.965v3.913zM17.058 11.918V8.005l-3.302 1.202v3.912zM13.643 9.246l-3.336 1.215v3.913l3.336-1.215zM6.907 13.165l3.322 1.209v-3.913L6.907 9.252z M10.34 7.873l3.281 1.193V5.198l-3.28-1.193zM20.507 2.715L17.19 3.922v3.913l3.317-1.207zM16.95 3.903L13.724 2.73l-3.269 1.19 3.225 1.174zM15.365 4.606l-1.624.592v3.868l3.317-1.207V3.991l-1.693.615zm-.391 2.778c-.367.134-.662-.074-.662-.464s.295-.813.662-.946c.366-.133.663.074.663.464s-.297.813-.663.946z M10.229 18.41v-3.914l-3.322-1.209V17.2zM13.678 17.182v-3.913l-3.371 1.227v3.913z M13.756 17.154l3.3-1.2V12.04l-3.3 1.2zM13.678 21.217l-3.371 1.227v-3.912h-.078v3.912l-3.322-1.209v-3.913l-.053-.058-.025-.06-3.336-1.21v-3.948l.034.013 3.287 1.196.015-.078-3.261-1.187 3.26-1.187v-.109L3.876 9.62l-.307-.112 3.26-1.188v.877l.079-.055V6.769l3.257 1.185.058-.061L7.084 6.75l-.102-.037 3.24-1.179v-.083L6.854 6.677v.018l-.025.018v1.523L3.44 9.47v.02l-.025.017v4.007l-3.39 1.233v.019L0 14.784v3.995l.025.037 3.4 1.237.008-.006.007.01 3.4 1.238.008-.006.006.01 3.4 1.237.014-.009.012.01 3.45-1.256.026-.037-.078-.027zM3.493 9.563l3.257 1.185-3.257 1.187V9.562zM3.4 19.96L.078 18.752v-3.913l2.361.86.96.349v3.913zm.015-3.99L.335 14.85l-.182-.066 3.262-1.187v2.374zm3.399 5.231l-3.321-1.209v-3.912l3.321 1.209v3.912zM23.791 5.434l-3.21-1.17v2.338zM20.387 2.643l-3.24-1.18-3.27 1.19 3.247 1.182z"/></svg>
+            <svg id="hyplk" redirect="https://twitter.com/sijey_praveen/" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Twitter</title><path  fill="#ffffff" d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg>
+            <svg id="hyplk" redirect="mailto:1jifyp858@mozmail.com" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Firefox Relay</title><path fill="#ffffff" d="M0 0v24h24V0zm10.13 6.706c1.481 0 2.858.706 3.352 2.224.565-1.377 1.73-2.224 3.353-2.224 1.87 0 3.565 1.13 3.565 3.564v4.765h1.412v2.26h-4.341v-5.86c0-1.8-.6-2.47-1.765-2.47-1.412 0-1.976 1.024-1.976 2.435V15h1.376v2.259h-4.341v-5.824c0-1.8-.6-2.47-1.765-2.47-1.412 0-1.976 1.024-1.976 2.435V15H9v2.259H2.647V15h1.377V9.176H2.647V6.918H6.99V8.47c.635-1.095 1.693-1.765 3.14-1.765z"/></svg>
+            <svg id="hyplk" redirect="https://replit.com/@Sijey" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Replit</title><path fill="#ffffff" d="M12.265.002a11.911 11.911 0 00-2.437.204c13.876 1.704 10.27 17.94 1.717 17.819 0 0 12.453 1.625 11.673-10.215A11.911 11.911 0 0012.265.002zM8.213.827c-.2.002-.402.008-.61.016A11.856 11.856 0 00.146 13.608C2.93-.421 18.805 4.122 17.9 12.688c0 0 2.85-12.014-9.688-11.861zm1.454 5.035C6.002 5.886.691 7.45.816 16.344a12.013 12.013 0 002.897 4.33c.052.051.108.1.162.149a12.02 12.02 0 001.137.926c.061.044.12.092.181.135a11.93 11.93 0 001.312.779c.132.068.266.13.4.193a11.854 11.854 0 001.199.486c.1.034.195.077.297.109a11.874 11.874 0 001.49.353c.153.027.307.05.461.07a12.016 12.016 0 001.578.123l.06.003c.4 0 .792-.021 1.18-.06-13.949-3.327-8.645-18.924-.114-17.68 0 0-1.469-.41-3.389-.398zm2.436 2.762a3.355 3.355 0 103.354 3.356 3.355 3.355 0 00-3.354-3.356zm-5.95 2.192S2.82 23.09 16.172 23.196a11.978 11.978 0 007.743-9.992c.033-.319.043-.644.05-.97.001-.085.013-.168.013-.255 0-.371-.023-.737-.056-1.1-3.527 13.887-19.132 8.448-17.77-.063z"/></svg>    
+        </div>
+    </div>
+    <script>
+        const variables = {
+            "content" : document.querySelectorAll(".content"),
+            "comforterbrushtxt" : document.querySelector(".comforterbrushtxt"),
+            "typing" : document.querySelector(".typing"),
+            "hyperlink" : document.querySelectorAll("#hyplk")
+        }
+
+        function __init__() {
+            for (let i = 0;i < variables.content.length; i++) {
+                variables.content[i].addEventListener("mouseover", () => {
+                    variables.content[i].parentNode.querySelector(".underline").style.width = variables.content[i].parentNode.querySelector(".underline").getAttribute("transform")
+                })
+                variables.content[i].addEventListener("mouseout", () => {
+                    variables.content[i].parentNode.querySelector(".underline").style.width = variables.content[i].parentNode.querySelector(".underline").getAttribute("default")
+                })
+            }
+
+            for (let i = 0;i < variables.hyperlink.length; i++) {
+                variables.hyperlink[i].onclick = () => {
+                    window.open(variables.hyperlink[i].getAttribute("redirect"), "_blank")
+                }
+            }
+
+            setInterval(() => {
+                variables.comforterbrushtxt.style.background = "linear-gradient(180deg, rgba(2,245,255,1), rgba(255,94,247,1)"
+                variables.comforterbrushtxt.style.backgroundClip = "text"
+                variables.typing.style.opacity = "1"
+                setTimeout(() => {
+                    variables.comforterbrushtxt.style.background = "linear-gradient(180deg, rgba(255,94,247,1), rgba(2,245,255,1))"
+                    variables.comforterbrushtxt.style.backgroundClip = "text"
+                    variables.typing.style.opacity = "0"
+                }, 500)
+            }, 1000)
+        }
+        document.addEventListener("DOMContentLoaded", __init__)
+    </script>
+</body>
 </html>
