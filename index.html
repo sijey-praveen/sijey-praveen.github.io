@@ -88,10 +88,14 @@ Designed and Developed by Sijey.
             setInterval(() => {
                 variables.comforterbrushtxt.style.background = "linear-gradient(180deg, rgba(2,245,255,1), rgba(255,94,247,1)"
                 variables.comforterbrushtxt.style.backgroundClip = "text"
+                variables.comforterbrushtxt.style.setProperty("-webkit-background-clip", "text")
+                variables.comforterbrushtxt.style.setProperty("-webkit-text-fill-color", "transparent")
                 variables.typing.style.opacity = "1"
                 setTimeout(() => {
                     variables.comforterbrushtxt.style.background = "linear-gradient(180deg, rgba(255,94,247,1), rgba(2,245,255,1))"
                     variables.comforterbrushtxt.style.backgroundClip = "text"
+                    variables.comforterbrushtxt.style.setProperty("-webkit-background-clip", "text")
+                variables.comforterbrushtxt.style.setProperty("-webkit-text-fill-color", "transparent")
                     variables.typing.style.opacity = "0"
                 }, 500)
             }, 1000)
