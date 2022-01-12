@@ -19,7 +19,7 @@ Designed and Developed by Sijey.
         *::-webkit-scrollbar {display: none;}
         *[aos] {opacity: 0;transition: all 2s ease-in-out;}
         .active {opacity: 1;}
-        body {background: #10101a;color: white;}
+        body {background: #181818;color: white;}
         .session {padding: 200px;line-height: 30px;}
         .session svg {width: 30px;cursor: pointer;padding: 0 0 0 10px;}
         .svg {margin: 20px 0 0 50px;}
@@ -33,7 +33,7 @@ Designed and Developed by Sijey.
         .typing {background: white;height: 25px;width: 3px;opacity: 0;margin: 0 10px 0 10px;}
         .content {white-space: pre-line;color: grey;font-family: "Roboto Mono";padding: 10px 10px 10px 60px;}
         .navigator {position: fixed;bottom: 0px;margin: 20px;text-align: center;}
-        .navigator #emoji {width: 50px;height: 50px;border-radius: 50%;background: white;cursor: pointer;text-align: center;padding: 12px;box-sizing: border-box;}
+        .navigator #emoji {width: 50px;height: 50px;border-radius: 50%;background: white;cursor: pointer;text-align: center;padding: 12px;box-sizing: border-box;box-shadow: 0 .5em 1em rgba(0,0,0,.15);}
         @media screen and (max-width:500px) {.session {padding: 120px 50px 120px 50px;} .content {padding: 10px;} .small-txt {padding: 0 0 0 20px;font-size: 10px;} .svg {margin: 10px 0 0 0;}}
     </style>
 </head>
@@ -78,7 +78,9 @@ Designed and Developed by Sijey.
             "typing" : document.querySelector(".typing"),
             "hyperlink" : document.querySelectorAll("#hyplk"),
             "emoji" : document.querySelector("#emoji"),
-            "emojis" : ["😱", "😎", "😘", "😊", "😍", "🤷‍♀️", "💖", "👋", "🔥"]
+            "emojis" : ["😱", "😎", "😘", "😊", "😍", "🤷‍♀️", "💖", "👋", "🔥"],
+            "isDark" : false,
+            "body" : document.querySelector("body")
         }
 
         function Scroll(position, dur = 1000, behavior = "auto") {
@@ -117,6 +119,17 @@ Designed and Developed by Sijey.
                 }, 500)
                 variables.emoji.textContent = choice(variables.emojis)
             }, 1000)
+
+            variables.emoji.onclick = () => {
+                if (variables.isDark === false) {
+                    variables.body.style = "background: white;color: #181818;"
+                    variables.isDark = true
+                }
+                else {
+                    variables.body.style = "background: #181818;color: white;"
+                    variables.isDark = false
+                }
+            }
         }
         document.addEventListener("DOMContentLoaded", __init__)
         window.onscroll = aos
