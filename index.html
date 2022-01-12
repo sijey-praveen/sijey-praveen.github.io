@@ -17,6 +17,8 @@ Designed and Developed by Sijey.
         @font-face {font-family: "Mochiy Pop P One";src: url("fonts/MochiyPopPOne-Regular.ttf") format("truetype");}
         * {margin: 0;scroll-behavior: smooth;transition: 0.6s;letter-spacing: 1px;user-select: none;overflow: auto;-ms-overflow-style: none;scrollbar-width: none;}
         *::-webkit-scrollbar {display: none;}
+        *[aos] {opacity: 0;transition: all 2s ease-in-out;}
+        .active {opacity: 1;}
         body {background: #10101a;color: white;}
         .session {padding: 200px;line-height: 30px;}
         .session svg {width: 30px;cursor: pointer;padding: 0 0 0 10px;}
@@ -30,16 +32,21 @@ Designed and Developed by Sijey.
         .underline {height: 3px;background: white;width: 50px;border-radius: 50px;}
         .typing {background: white;height: 25px;width: 3px;opacity: 0;margin: 0 10px 0 10px;}
         .content {white-space: pre-line;color: grey;font-family: "Roboto Mono";padding: 10px 10px 10px 60px;}
+        .navigator {position: fixed;bottom: 0px;margin: 20px;text-align: center;}
+        .navigator #emoji {width: 50px;height: 50px;border-radius: 50%;background: white;cursor: pointer;text-align: center;padding: 12px;box-sizing: border-box;}
         @media screen and (max-width:500px) {.session {padding: 120px 50px 120px 50px;} .content {padding: 10px;} .small-txt {padding: 0 0 0 20px;font-size: 10px;} .svg {margin: 10px 0 0 0;}}
     </style>
 </head>
 <body>
+    <div class="navigator">
+        <div id="emoji">👋</div>
+    </div>
     <div class="session">
         <div class="msg">Hey There!</div>
         <div class="comforterbrushtxt">I'm Sijey Praveen.</div>
         <div class="small-txt">Student, Programmer, Coder, Web Developer.</div>
     </div>
-    <div aos style="opacity: 0;" class="session">
+    <div aos class="session">
         <div class="title">About Me</div>
         <div class="underline" default="50px" transform="180px"></div>
         <div class="content">
@@ -69,8 +76,19 @@ Designed and Developed by Sijey.
             "content" : document.querySelectorAll(".content"),
             "comforterbrushtxt" : document.querySelector(".comforterbrushtxt"),
             "typing" : document.querySelector(".typing"),
-            "hyperlink" : document.querySelectorAll("#hyplk")
+            "hyperlink" : document.querySelectorAll("#hyplk"),
+            "emoji" : document.querySelector("#emoji"),
+            "emojis" : ["😱", "😎", "😘", "😊", "😍", "🤷‍♀️", "💖", "👋", "🔥"]
         }
+
+        function Scroll(position, dur = 1000, behavior = "auto") {
+            window.scrollTo({
+                "top" : "",
+                "behavior" : behavior
+            }, dur)
+        }
+
+        // Scroll(-50, 3000, "smooth")
 
         function __init__() {
             for (let i = 0;i < variables.content.length; i++) {
@@ -97,6 +115,7 @@ Designed and Developed by Sijey.
                     variables.comforterbrushtxt.classList.add("bottom")
                     variables.typing.style.opacity = "0"
                 }, 500)
+                variables.emoji.textContent = choice(variables.emojis)
             }, 1000)
         }
         document.addEventListener("DOMContentLoaded", __init__)
