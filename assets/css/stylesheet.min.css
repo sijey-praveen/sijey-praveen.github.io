@@ -19,7 +19,7 @@ body {background: #181818;color: white;}
 .session {padding: 200px;line-height: 30px;}
 .session svg {width: 30px;cursor: pointer;padding: 0 0 0 10px;}
 .row {display: flex;align-items: center;}
-.project {width: max-content;padding: 30px;box-sizing: border-box;margin: 20px;border: 1px solid #20222e;background: #212023;}
+.project {width: max-content;padding: 30px;box-sizing: border-box;margin: 20px;border: 1px solid #20222e;background: #212023;border-radius: 20px;}
 .project a {text-decoration: none;}
 .project .content {padding: 5px;}
 .project .title {font-size: 20px;cursor: pointer;width: max-content;color: white;}
