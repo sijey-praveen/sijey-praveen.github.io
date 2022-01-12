@@ -2,16 +2,17 @@ const variables = {
     "typing" : document.querySelector(".typing")
 }
 
-
-let letterlen = 0
-
 function __init__() {
-    new requests("GET", "https://api.sijey.repl.co/githubstarcount?repo=https://github.com/chromium-projects/paperpro", null, true).response((data) => {
-        document.querySelector("#ppstarcount").innerText = JSON.parse(data).star_count
+    new requests("GET", "https://github.com/chromium-projects/paperpro", null, true).response((data) => {
+        document.querySelector("#ppstarcount").innerText =  new BeautifulSoup(data, "#repo-stars-counter-star", "text").find
     })
 
-    new requests("GET", "https://api.sijey.repl.co/githubstarcount?repo=https://github.com/sijey-praveen/YouTube-Music-API", null, true).response((data) => {
-        document.querySelector("#ytmstarcount").innerText = JSON.parse(data).star_count
+    new requests("GET", "https://github.com/sijey-praveen/YouTube-Music-API", null, true).response((data) => {
+        document.querySelector("#ytmstarcount").innerText = new BeautifulSoup(data, "#repo-stars-counter-star", "text").find
+    })
+
+    new requests("GET", "https://github.com/peregrine-lang/peregrine-lang.github.io", null, true).response((data) => {
+        document.querySelector("#plwstarcount").innerText = new BeautifulSoup(data, "#repo-stars-counter-star", "text").find
     })
 
     setInterval(() => {
