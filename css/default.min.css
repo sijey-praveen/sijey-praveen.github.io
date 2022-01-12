@@ -1,0 +1,21 @@
+@font-face {font-family: "Mulish";src: url("/assets/fonts/Mulish-Regular.ttf") format("truetype");}
+@font-face {font-family: "Roboto Mono";src: url("/assets/fonts/RobotoMono-Regular.ttf") format("truetype");}
+@font-face {font-family: "Comforter Brush";src: url("/assets/fonts/ComforterBrush-Regular.ttf") format("truetype");}
+@font-face {font-family: "Mochiy Pop P One";src: url("/assets/fonts/MochiyPopPOne-Regular.ttf") format("truetype");}
+* {margin: 0;scroll-behavior: smooth;transition: 0.6s;letter-spacing: 1px;user-select: none;overflow: auto;-ms-overflow-style: none;scrollbar-width: none;}
+*::-webkit-scrollbar {display: none;}
+*[aos] {opacity: 0;transition: all 2s ease-in-out;}
+.active {opacity: 1;}
+a {text-decoration: none;}
+body {background: #181818;color: white;}
+.svg {margin: 10px 0 0 50px;}
+.msg {font-size: 18px;color: grey;font-family: "Mulish";padding: 5px;font-style: italic;}
+.smltxt {padding: 0 0 0 120px;color: grey;font-family: "Mulish";font-size: 14px;}
+.title {font-size: 30px;font-family: "Mochiy Pop P One";font-weight: 600;padding: 5px;line-height: normal;}
+.underline {height: 3px;background: white;width: 50px;border-radius: 50px;}
+.typing {background: white;height: 25px;width: 3px;opacity: 0;margin: 0 10px 0 10px;}
+.content {white-space: pre-line;color: grey;font-family: "Roboto Mono";padding: 10px 10px 10px 60px;}
+.comforterbrushtxt  {font-size: 90px;font-family: "Comforter Brush";font-weight: 600;padding: 5px;line-height: 130px;}
+.session {padding: 200px;line-height: 30px;}
+.session svg {width: 30px;cursor: pointer;padding: 0 0 0 10px;}
+@media screen and (max-width:500px) {.session {padding: 120px 50px 120px 50px;} .content {padding: 10px;} .small-txt {padding: 0 0 0 20px;font-size: 10px;} .svg {margin: 10px 0 0 0;}}

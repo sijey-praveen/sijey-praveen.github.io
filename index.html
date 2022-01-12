@@ -1,6 +1,18 @@
 <!-- 
 Sijey (c) 2022, All Rights Reserved. 
 Designed and Developed by Sijey.
+
+Privacy Statement
+> This Site Doesn't collects 'User Data' or 'Personal Informations including Email Address'.
+> This Site Doesn't Store or Access any Cookies from the browser.
+
+
+xhr requests refers
+
+• https://api.sijey.repl.co/
+• https://avatars.githubusercontent.com/
+
+Contact Developer : 1jifyp858@mozmail.com
 -->
 <!DOCTYPE html>
 <html lang="en-US" oncontextmenu="return false">
@@ -10,77 +22,13 @@ Designed and Developed by Sijey.
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sijey Praveen</title>
     <link rel="shortcut icon" href="https://avatars.githubusercontent.com/u/80583308" type="image/png">
-    <style type="text/css">
-        @font-face {font-family: "Mulish";src: url("fonts/Mulish-Regular.ttf") format("truetype");}
-        @font-face {font-family: "Roboto Mono";src: url("fonts/RobotoMono-Regular.ttf") format("truetype");}
-        @font-face {font-family: "Comforter Brush";src: url("fonts/ComforterBrush-Regular.ttf") format("truetype");}
-        @font-face {font-family: "Mochiy Pop P One";src: url("fonts/MochiyPopPOne-Regular.ttf") format("truetype");}
-        * {margin: 0;scroll-behavior: smooth;transition: 0.6s;letter-spacing: 1px;user-select: none;overflow: auto;-ms-overflow-style: none;scrollbar-width: none;}
-        *::-webkit-scrollbar {display: none;}
-        *[aos] {opacity: 0;transition: all 2s ease-in-out;}
-        a {text-decoration: none;}
-        .active {opacity: 1;}
-        body {background: #181818;color: white;}
-        .session {padding: 200px;line-height: 30px;}
-        .session svg {width: 30px;cursor: pointer;padding: 0 0 0 10px;}
-        .svg {margin: 20px 0 0 50px;}
-        .comforterbrushtxt  {font-size: 90px;font-family: "Comforter Brush";font-weight: 600;padding: 5px;line-height: 130px;}
-        .top {background: linear-gradient(180deg, rgba(2,245,255,1), rgba(255,94,247,1));background-clip: text;-webkit-background-clip: text;-webkit-text-fill-color: transparent;}
-        .bottom {background: linear-gradient(180deg, rgba(255,94,247,1), rgba(2,245,255,1));background-clip: text;-webkit-background-clip: text;-webkit-text-fill-color: transparent;}
-        .msg {font-size: 18px;color: grey;font-family: "Mulish";padding: 5px;font-style: italic;}
-        .small-txt {padding: 0 0 0 120px;color: grey;font-family: "Mulish";font-size: 14px;}
-        .title {font-size: 30px;font-family: "Mochiy Pop P One";font-weight: 600;padding: 5px;line-height: normal;}
-        .underline {height: 3px;background: white;width: 50px;border-radius: 50px;}
-        .typing {background: white;height: 25px;width: 3px;opacity: 0;margin: 0 10px 0 10px;}
-        .content {white-space: pre-line;color: grey;font-family: "Roboto Mono";padding: 10px 10px 10px 60px;}
-        .navigator {position: fixed;bottom: 0px;margin: 20px;text-align: center;width: 35px;height: 35px;border-radius: 50%;background: white;cursor: pointer;box-sizing: border-box;box-shadow: 0 .5em 1em rgba(0,0,0,.15);padding: 6px;}
-        @media screen and (max-width:500px) {.session {padding: 120px 50px 120px 50px;} .content {padding: 10px;} .small-txt {padding: 0 0 0 20px;font-size: 10px;} .svg {margin: 10px 0 0 0;}}
-    </style>
+    <link rel="stylesheet" href="assets/css/default.min.css">
 </head>
 <body>
-    <div class="navigator" style="display:none;">
-        <svg id="light" x="0px" y="0px" viewBox="0 0 207.628 207.628" style="enable-background:new 0 0 207.628 207.628;" role="img">
-        <circle cx="103.814" cy="103.814" r="45.868" />
-        <path d="M103.814,157.183c-29.427,0-53.368-23.941-53.368-53.368s23.941-53.368,53.368-53.368s53.368,23.941,53.368,53.368
-            S133.241,157.183,103.814,157.183z M103.814,65.446c-21.156,0-38.368,17.212-38.368,38.368s17.212,38.368,38.368,38.368
-            s38.368-17.212,38.368-38.368S124.97,65.446,103.814,65.446z" />
-        <path d="M103.814,39.385c-4.142,0-7.5-3.358-7.5-7.5V7.5c0-4.142,3.358-7.5,7.5-7.5s7.5,3.358,7.5,7.5v24.385
-            C111.314,36.027,107.956,39.385,103.814,39.385z" />
-        <path d="M103.814,207.628c-4.142,0-7.5-3.358-7.5-7.5v-24.385c0-4.142,3.358-7.5,7.5-7.5s7.5,3.358,7.5,7.5v24.385
-            C111.314,204.271,107.956,207.628,103.814,207.628z" />
-        <path d="M200.128,111.314h-24.385c-4.142,0-7.5-3.358-7.5-7.5s3.358-7.5,7.5-7.5h24.385c4.142,0,7.5,3.358,7.5,7.5
-            S204.271,111.314,200.128,111.314z" />
-        <path d="M31.885,111.314H7.5c-4.142,0-7.5-3.358-7.5-7.5s3.358-7.5,7.5-7.5h24.385c4.142,0,7.5,3.358,7.5,7.5
-            S36.027,111.314,31.885,111.314z" />
-        <path
-            d="M154.676,60.452c-1.919,0-3.839-0.732-5.303-2.197c-2.929-2.929-2.929-7.678,0-10.606l17.243-17.242
-            c2.929-2.929,7.678-2.93,10.606,0c2.929,2.929,2.929,7.678,0,10.606l-17.243,17.242C158.515,59.72,156.595,60.452,154.676,60.452z" />
-        <path d="M35.709,179.419c-1.919,0-3.839-0.732-5.303-2.197c-2.929-2.929-2.929-7.678,0-10.606l17.243-17.243
-            c2.929-2.929,7.678-2.929,10.606,0c2.929,2.929,2.929,7.678,0,10.606l-17.243,17.243C39.548,178.687,37.629,179.419,35.709,179.419z
-            " />
-        <path d="M171.918,179.419c-1.919,0-3.839-0.732-5.303-2.197l-17.243-17.243c-2.929-2.929-2.929-7.678,0-10.606
-            c2.929-2.929,7.678-2.929,10.606,0l17.243,17.243c2.929,2.929,2.929,7.678,0,10.606
-            C175.757,178.687,173.838,179.419,171.918,179.419z" />
-        <path
-            d="M52.952,60.452c-1.919,0-3.839-0.732-5.303-2.197L30.406,41.013c-2.929-2.929-2.929-7.677,0-10.606
-            c2.929-2.929,7.678-2.93,10.606,0l17.243,17.242c2.929,2.929,2.929,7.677,0,10.606C56.791,59.72,54.872,60.452,52.952,60.452z" />
-        </svg>
-        <svg id="dark" x="0px" y="0px" viewBox="0 0 168.29 168.29" style="enable-background:new 0 0 168.29 168.29;" role="img">
-            <path d="M159.81,127.909c-1.025-2.473-3.289-4.212-5.942-4.565c-24.423-3.241-45.44-19.364-54.848-42.078
-                c-9.409-22.715-5.95-48.978,9.028-68.539c1.628-2.125,1.999-4.957,0.975-7.43c-1.024-2.473-3.289-4.212-5.942-4.565
-                C99.416,0.247,95.69,0,92.005,0C80.957,0,70.152,2.155,59.889,6.406c-20.764,8.601-36.935,24.772-45.533,45.536
-                c-8.597,20.761-8.595,43.628,0.004,64.39c13.074,31.563,43.595,51.957,77.756,51.957c0.001,0,0.001,0,0.001,0
-                c11.051,0,21.872-2.161,32.164-6.424c13.644-5.652,25.592-14.825,34.553-26.528C160.462,133.213,160.834,130.382,159.81,127.909z
-                M118.541,148.008c-8.463,3.505-17.353,5.283-26.424,5.282c-28.073,0-53.155-16.76-63.899-42.698
-                c-7.067-17.061-7.068-35.852-0.004-52.911C35.28,40.62,48.567,27.332,65.629,20.265c7.424-3.075,15.189-4.816,23.126-5.188
-                c-11.761,22.021-13.291,48.521-3.595,71.93c9.694,23.405,29.509,41.059,53.392,48.315
-                C132.687,140.647,125.916,144.953,118.541,148.008z"/>
-        </svg>
-    </div>
     <div class="session">
         <div class="msg">Hey There!</div>
         <div class="comforterbrushtxt">I'm Sijey Praveen.</div>
-        <div class="small-txt">Student, Programmer, Coder, Web Developer.</div>
+        <div class="smltxt">Student, Programmer, Coder, Web Developer.</div>
     </div>
     <div aos class="session">
         <div class="title">About Me</div>
@@ -113,50 +61,7 @@ Designed and Developed by Sijey.
             </a>
         </div>
     </div>
-    <script src="https://api.sijey.repl.co/dev.lib.js"></script>
-    <script>
-        const variables = {
-            "content" : document.querySelectorAll(".content"),
-            "typing" : document.querySelector(".typing"),
-            "isDark" : false,
-            "body" : document.querySelector("body")
-        }
-
-        function __init__() {
-            for (let i = 0;i < variables.content.length; i++) {
-                variables.content[i].addEventListener("mouseover", () => {
-                    variables.content[i].parentNode.querySelector(".underline").style.width = variables.content[i].parentNode.querySelector(".underline").getAttribute("transform")
-                })
-                variables.content[i].addEventListener("mouseout", () => {
-                    variables.content[i].parentNode.querySelector(".underline").style.width = variables.content[i].parentNode.querySelector(".underline").getAttribute("default")
-                })
-            }
-
-            setInterval(() => {
-                variables.typing.style.opacity = "1"
-                setTimeout(() => {
-                    variables.typing.style.opacity = "0"
-                }, 500)
-            }, 1000)
-
-            // document.querySelector(".navigator").onclick = () => {
-            //     if (variables.isDark === false) {
-            //         variables.body.style = "background: white;color: #181818;"
-            //         variables.isDark = true
-            //         document.getElementById("light").style.display = "none"
-            //         document.getElementById("dark").style.display = "block"
-            //     }
-            //     else {
-            //         variables.body.style = "background: #181818;color: white;"
-            //         variables.isDark = false
-            //         document.getElementById("light").style.display = "block"
-            //         document.getElementById("dark").style.display = "none"
-            //     }
-            // }
-        }
-        
-        document.addEventListener("DOMContentLoaded", __init__)
-        window.onscroll = aos
-    </script>
+    <script type="text/javascript" src="https://api.sijey.repl.co/dev.lib.js"></script>
+    <script type="text/javascript" src="assets/js/main.js "></script>
 </body>
 </html>
