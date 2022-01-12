@@ -1,19 +1,18 @@
 const variables = {
-    "content" : document.querySelectorAll(".content"),
-    "typing" : document.querySelector(".typing"),
-    "isDark" : false,
-    "body" : document.querySelector("body")
+    "typing" : document.querySelector(".typing")
 }
 
+
+let letterlen = 0
+
 function __init__() {
-    for (let i = 0;i < variables.content.length; i++) {
-        variables.content[i].addEventListener("mouseover", () => {
-            variables.content[i].parentNode.querySelector(".underline").style.width = variables.content[i].parentNode.querySelector(".underline").getAttribute("transform")
-        })
-        variables.content[i].addEventListener("mouseout", () => {
-            variables.content[i].parentNode.querySelector(".underline").style.width = variables.content[i].parentNode.querySelector(".underline").getAttribute("default")
-        })
-    }
+    new requests("GET", "https://api.sijey.repl.co/githubstarcount?repo=https://github.com/chromium-projects/paperpro", null, true).response((data) => {
+        document.querySelector("#ppstarcount").innerText = JSON.parse(data).star_count
+    })
+
+    new requests("GET", "https://api.sijey.repl.co/githubstarcount?repo=https://github.com/sijey-praveen/YouTube-Music-API", null, true).response((data) => {
+        document.querySelector("#ytmstarcount").innerText = JSON.parse(data).star_count
+    })
 
     setInterval(() => {
         variables.typing.style.opacity = "1"
