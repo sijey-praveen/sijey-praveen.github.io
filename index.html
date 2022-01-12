@@ -23,7 +23,7 @@ Designed and Developed by Sijey.
         .session {padding: 200px;line-height: 30px;}
         .session svg {width: 30px;cursor: pointer;padding: 0 0 0 10px;}
         .svg {margin: 20px 0 0 50px;}
-        .comforterbrushtxt  {font-size: 90px;font-family: "Comforter Brush";font-weight: 600;padding: 5px;line-height: 130px;color: transparent;background: linear-gradient(180deg, rgba(255,94,247,1), rgba(2,245,255,1));background-clip: text;-webkit-background-clip: text;-webkit-text-fill-color: transparent;}
+        .comforterbrushtxt  {font-size: 90px;font-family: "Comforter Brush";font-weight: 600;padding: 5px;line-height: 130px;color: white;}
         .top {background: linear-gradient(180deg, rgba(2,245,255,1), rgba(255,94,247,1));background-clip: text;-webkit-background-clip: text;-webkit-text-fill-color: transparent;}
         .bottom {background: linear-gradient(180deg, rgba(255,94,247,1), rgba(2,245,255,1));background-clip: text;-webkit-background-clip: text;-webkit-text-fill-color: transparent;}
         .msg {font-size: 18px;color: grey;font-family: "Mulish";padding: 5px;}
@@ -32,16 +32,13 @@ Designed and Developed by Sijey.
         .underline {height: 3px;background: white;width: 50px;border-radius: 50px;}
         .typing {background: white;height: 25px;width: 3px;opacity: 0;margin: 0 10px 0 10px;}
         .content {white-space: pre-line;color: grey;font-family: "Roboto Mono";padding: 10px 10px 10px 60px;}
-        .navigator {position: fixed;bottom: 0px;margin: 20px;text-align: center;}
-        .navigator #emoji {width: 50px;height: 50px;border-radius: 50%;background: white;cursor: pointer;text-align: center;padding: 12px;box-sizing: border-box;box-shadow: 0 .5em 1em rgba(0,0,0,.15);}
+        .navigator {position: fixed;bottom: 0px;margin: 20px;text-align: center;width: 50px;height: 50px;border-radius: 50%;background: white;cursor: pointer;box-sizing: border-box;box-shadow: 0 .5em 1em rgba(0,0,0,.15);padding: 12px;}
         @media screen and (max-width:500px) {.session {padding: 120px 50px 120px 50px;} .content {padding: 10px;} .small-txt {padding: 0 0 0 20px;font-size: 10px;} .svg {margin: 10px 0 0 0;}}
     </style>
 </head>
 <body>
-    <div class="navigator">
-        <div id="emoji">👋</div>
-    </div>
-    <div class="session">
+    <div id="emoji" class="navigator">👋</div>
+    <div class="session" style='background: url("https://images.pexels.com/photos/2449600/pexels-photo-2449600.png?auto=compress");background-position: center;background-repeat: no-repeat;background-size: cover;background-attachment: fixed;'>
         <div class="msg">Hey There!</div>
         <div class="comforterbrushtxt">I'm Sijey Praveen.</div>
         <div class="small-txt">Student, Programmer, Coder, Web Developer.</div>
@@ -109,12 +106,12 @@ Designed and Developed by Sijey.
             }
 
             setInterval(() => {
-                variables.comforterbrushtxt.classList.remove("bottom")
-                variables.comforterbrushtxt.classList.add("top")
+                // variables.comforterbrushtxt.classList.remove("bottom")
+                // variables.comforterbrushtxt.classList.add("top")
                 variables.typing.style.opacity = "1"
                 setTimeout(() => {
-                    variables.comforterbrushtxt.classList.remove("top")
-                    variables.comforterbrushtxt.classList.add("bottom")
+                //     variables.comforterbrushtxt.classList.remove("top")
+                //     variables.comforterbrushtxt.classList.add("bottom")
                     variables.typing.style.opacity = "0"
                 }, 500)
                 variables.emoji.textContent = choice(variables.emojis)
