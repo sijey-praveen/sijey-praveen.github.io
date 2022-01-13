@@ -9,17 +9,16 @@
 .active {opacity: 1;}
 a {text-decoration: none;}
 body {background: #181818;color: white;}
-.svg {margin: 10px 0 0 50px;}
 .msg {font-size: 18px;color: grey;font-family: "Mulish";padding: 5px;font-style: italic;}
 .smltxt {padding: 0 0 0 120px;color: grey;font-family: "Mulish";font-size: 14px;}
 .title {font-size: 30px;font-family: "Mochiy Pop P One";font-weight: 600;padding: 5px;line-height: normal;}
 .typing {background: white;height: 25px;width: 3px;opacity: 0;margin: 0 10px 0 10px;}
-.content {white-space: pre-line;color: grey;font-family: "Roboto Mono";padding: 10px 10px 10px 60px;}
+.content {white-space: pre-line;color: grey;font-family: "Roboto Mono";padding: 10px;}
 .comforterbrushtxt  {font-size: 90px;font-family: "Comforter Brush";font-weight: 600;padding: 5px;line-height: 130px;}
-.session {padding: 200px;line-height: 30px;}
-.session svg {width: 30px;cursor: pointer;padding: 0 0 0 10px;}
-.row {display: flex;align-items: center;}
-.project {width: max-content;padding: 30px;box-sizing: border-box;margin: 20px;border: 1px solid #20222e;background: #212023;border-radius: 20px;}
+.session {padding: 100px;line-height: 30px;height: 500px;}
+.session svg {width: 30px;cursor: pointer;padding: 5px;}
+.row {display: flex;}
+.project {width: 500px;padding: 30px;box-sizing: border-box;margin: 10px;border: 1px solid #20222e;background: #212023;transition: none;}
 .project a {text-decoration: none;}
 .project .content {padding: 5px;}
 .project .title {font-size: 20px;cursor: pointer;width: max-content;color: white;}
@@ -28,4 +27,6 @@ body {background: #181818;color: white;}
 .project .source svg {fill: #dadadc;width: 15px;padding: 0px 5px 0px 5px;}
 .project .star {display: flex;align-items: center;margin: 10px 0 0 0;font-family: "Bebas Neue"}
 .project .star svg {fill: #dadadc;cursor: pointer;padding: 0px 5px 0px 5px;width: 15px;}
-@media screen and (max-width:500px) {.session {padding: 120px 50px 120px 50px;display: block;} .content {padding: 10px;} .small-txt {padding: 0 0 0 20px;font-size: 10px;} .svg {margin: 10px 0 0 0;}}
+.project:hover {transform: scale(1.05);}
+.footer {text-align: center;font-family: "Bebas Neue";font-size: 14px;}
+@media screen and (max-width:500px) {.session {padding: 120px 20px 120px 20px;display: block;} .content {padding: 10px;} .small-txt {padding: 0 0 0 20px;font-size: 10px;} .svg {margin: 10px 0 0 0;} .project {width: 300px;}}
