@@ -17,7 +17,35 @@ Contact Developer : 1jifyp858@mozmail.com
     <link rel="mask-icon" href="">
     <link rel="shortcut icon" href="" type="image/png">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="/assets/css/stylesheet.min.css">
+    <style type="text/css">
+        @font-face {font-family: "Mulish";src: url("/assets/fonts/Mulish-Regular.ttf") format("truetype");}
+        @font-face {font-family: "content";src: url("/assets/fonts/RobotoMono-Regular.ttf") format("truetype");}
+        @font-face {font-family: "strong";src: url("/assets/fonts/ComforterBrush-Regular.ttf") format("truetype");}
+        @font-face {font-family: "name";src: url("/assets/fonts/MochiyPopPOne-Regular.ttf") format("truetype");}
+        @font-face {font-family: "Bebas Neue";src: url("/assets/fonts/BebasNeue-Regular.ttf") format("truetype");}
+        @font-face {font-family: "title";src: url("/assets/fonts/Righteous-Regular.ttf") format("truetype");}
+        * {margin: 0;scroll-behavior: smooth;transition: 0.6s;letter-spacing: 1px;overflow: auto;-ms-overflow-style: none;scrollbar-width: none;}
+        *::-webkit-scrollbar {display: none;}
+        ::selection {background: green;color: white;}
+        :root {--clr-blue: #0990ea;}
+        body {background: white;color: #181818;}
+        section {display: flex;justify-content: center;flex-flow: row wrap;padding: 100px 50px 100px 50px;align-items: center;}
+        .image {width: 300px;height: 300px;border-radius: 50%;border: 10px solid #f6f7f9;background: url("https://images.pexels.com/photos/737586/pexels-photo-737586.jpeg?auto=compress");background-position: center;background-repeat: no-repeat;background-size: cover;margin: 50px;}
+        .name {font-size: 50px;font-weight: bolder;font-family: "name";}
+        .content {white-space: pre-line;font-size: 16px;font-family: "content";line-height: 30px;padding: 5px;}
+        .strong {font-family: "strong";margin: 10px 0 0 0;font-weight: bolder;font-size: 36px;}
+        .tag-list {display: flex;align-items: center;flex-flow: row wrap;margin: 10px 0 10px 0;}
+        .tags {padding: 5px 15px 5px 15px;color: grey;background: #f6f7f9;width: max-content;border-radius: 50px;cursor: pointer;margin: 10px;font-family: "Mulish";display: flex;align-items: center;font-size: 14px;}
+        .tag-list svg {padding: 0px 5px 0px 5px;width: 15px;}
+        .social-links {display: flex;flex-flow: row wrap;font-family: "Bebas Neue";}
+        .social-links .links {display: flex;align-items: center;margin: 5px 10px 5px 10px;cursor: pointer;}
+        .social-links a {text-decoration: underline;color: var(--clr-blue);}
+        .social-links svg {width: 15px;padding: 5px;fill: var(--clr-blue);}
+        .meta {display: flex;align-items: center;padding: 5px 10px 5px 10px;color: grey;margin: 10px 5px 10px 5px;font-family: "Mulish";font-size: 14px;}
+        .meta svg {width: 15px;fill: grey;padding: 0 5px 0 5px;}
+        @media screen and (max-width:1000px) {section {padding: 30px;justify-content: start;} .image {margin: 10px;}}
+        @media screen and (max-width:500px) {section {padding: 30px;justify-content: center;} .strong {font-size: 30px;} .image {margin: 0;}}
+    </style>
 </head>
 <body>
     <section>
@@ -38,7 +66,7 @@ Contact Developer : 1jifyp858@mozmail.com
             </div>
             <div class="meta">
                 <div>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path style="fill:#F2F2F2;" d="M511.997,400.144c-170.666,69.189-341.331-69.189-511.997,0c0-96.095,0-192.191,0-288.286c170.666-69.189,341.331,69.189,511.997,0C511.997,207.952,511.997,304.049,511.997,400.144z"/><path style="fill:#31AF0E;" d="M512,304.051c0,32.034,0,64.057,0,96.092c-170.665,69.189-341.331-69.189-511.997,0c0-32.034,0-64.057,0-96.092C170.669,234.862,341.335,373.24,512,304.051z"/><path style="fill:#F7B239;" d="M512,111.856c0,32.034,0,64.057,0,96.092c-170.665,69.189-341.331-69.189-511.997,0c0-32.034,0-64.057,0-96.092C170.669,42.668,341.335,181.045,512,111.856z"/><g><path style="fill:#0C7AAA;" d="M275.602,250.235h-13.559l9.587-9.587c1.352-1.35,1.352-3.541,0-4.893c-1.351-1.35-3.54-1.35-4.892,0l-9.587,9.587v-13.558c0-1.911-1.549-3.459-3.459-3.459c-1.911,0-3.459,1.549-3.459,3.459v13.559l-9.587-9.587c-1.35-1.351-3.541-1.35-4.892,0c-1.351,1.351-1.351,3.541,0,4.893l9.587,9.587h-13.559c-1.911,0-3.459,1.549-3.459,3.459c0,1.911,1.549,3.459,3.459,3.459h13.558l-9.587,9.587c-1.35,1.35-1.35,3.541,0,4.893c0.675,0.675,1.561,1.012,2.446,1.012s1.771-0.338,2.446-1.014l9.587-9.587v13.559c0,1.911,1.549,3.459,3.459,3.459c1.911,0,3.459-1.549,3.459-3.459v-13.558l9.586,9.586c0.676,0.676,1.561,1.014,2.446,1.014s1.77-0.338,2.446-1.012c1.351-1.352,1.351-3.541,0-4.893l-9.587-9.587h13.561c1.911,0,3.459-1.549,3.459-3.459C279.061,251.785,277.513,250.235,275.602,250.235z"/><path style="fill:#0C7AAA;" d="M253.692,293.058c-21.705,0-39.364-17.658-39.364-39.364s17.658-39.364,39.364-39.364s39.364,17.658,39.364,39.364S275.397,293.058,253.692,293.058z M253.692,221.249c-17.89,0-32.445,14.555-32.445,32.445s14.555,32.445,32.445,32.445s32.445-14.555,32.445-32.445S271.582,221.249,253.692,221.249z"/></g></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="#F2F2F2" d="M511.997,400.144c-170.666,69.189-341.331-69.189-511.997,0c0-96.095,0-192.191,0-288.286c170.666-69.189,341.331,69.189,511.997,0C511.997,207.952,511.997,304.049,511.997,400.144z"/><path style="fill:#31AF0E;" d="M512,304.051c0,32.034,0,64.057,0,96.092c-170.665,69.189-341.331-69.189-511.997,0c0-32.034,0-64.057,0-96.092C170.669,234.862,341.335,373.24,512,304.051z"/><path style="fill:#F7B239;" d="M512,111.856c0,32.034,0,64.057,0,96.092c-170.665,69.189-341.331-69.189-511.997,0c0-32.034,0-64.057,0-96.092C170.669,42.668,341.335,181.045,512,111.856z"/><g><path style="fill:#0C7AAA;" d="M275.602,250.235h-13.559l9.587-9.587c1.352-1.35,1.352-3.541,0-4.893c-1.351-1.35-3.54-1.35-4.892,0l-9.587,9.587v-13.558c0-1.911-1.549-3.459-3.459-3.459c-1.911,0-3.459,1.549-3.459,3.459v13.559l-9.587-9.587c-1.35-1.351-3.541-1.35-4.892,0c-1.351,1.351-1.351,3.541,0,4.893l9.587,9.587h-13.559c-1.911,0-3.459,1.549-3.459,3.459c0,1.911,1.549,3.459,3.459,3.459h13.558l-9.587,9.587c-1.35,1.35-1.35,3.541,0,4.893c0.675,0.675,1.561,1.012,2.446,1.012s1.771-0.338,2.446-1.014l9.587-9.587v13.559c0,1.911,1.549,3.459,3.459,3.459c1.911,0,3.459-1.549,3.459-3.459v-13.558l9.586,9.586c0.676,0.676,1.561,1.014,2.446,1.014s1.77-0.338,2.446-1.012c1.351-1.352,1.351-3.541,0-4.893l-9.587-9.587h13.561c1.911,0,3.459-1.549,3.459-3.459C279.061,251.785,277.513,250.235,275.602,250.235z"/><path style="fill:#0C7AAA;" d="M253.692,293.058c-21.705,0-39.364-17.658-39.364-39.364s17.658-39.364,39.364-39.364s39.364,17.658,39.364,39.364S275.397,293.058,253.692,293.058z M253.692,221.249c-17.89,0-32.445,14.555-32.445,32.445s14.555,32.445,32.445,32.445s32.445-14.555,32.445-32.445S271.582,221.249,253.692,221.249z"/></g></svg>
                 </div>
                 <div>India</div>
             </div>
@@ -112,6 +140,5 @@ Contact Developer : 1jifyp858@mozmail.com
             </div>
         </div>
     </section>
-    <script type="text/javascript" src="https://cdn.sijey.repl.co/js/libraries/pure.js"></script>
 </body>
 </html>
