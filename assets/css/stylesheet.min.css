@@ -16,7 +16,7 @@ section {display: flex;justify-content: center;flex-flow: row wrap;padding: 100p
 .strong {font-family: "strong";margin: 10px 0 0 0;font-weight: bolder;font-size: 36px;}
 
 .tag-list {display: flex;align-items: center;flex-flow: row wrap;margin: 10px 0 10px 0;}
-.tags {padding: 5px 15px 5px 15px;color: grey;background: #f6f7f9;width: max-content;border-radius: 50px;cursor: pointer;margin: 10px;font-family: "Mulish";display: flex;align-items: center;}
+.tags {padding: 5px 15px 5px 15px;color: grey;background: #f6f7f9;width: max-content;border-radius: 50px;cursor: pointer;margin: 10px;font-family: "Mulish";display: flex;align-items: center;font-size: 14px;}
 .tag-list svg {padding: 0px 5px 0px 5px;width: 15px;}
 
 .social-links {display: flex;flex-flow: row wrap;font-family: "Bebas Neue";}
