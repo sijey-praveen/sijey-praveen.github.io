@@ -9,22 +9,19 @@
 ::selection {background: green;color: white;}
 :root {--clr-blue: #0990ea;}
 body {background: white;color: #181818;}
-section {display: flex;justify-content: center;flex-flow: row wrap;padding: 100px;align-items: center;}
+section {display: flex;justify-content: center;flex-flow: row wrap;padding: 100px 50px 100px 50px;align-items: center;}
 .image {width: 300px;height: 300px;border-radius: 50%;border: 10px solid #f6f7f9;background: url("https://images.pexels.com/photos/737586/pexels-photo-737586.jpeg?auto=compress");background-position: center;background-repeat: no-repeat;background-size: cover;}
 .name {font-size: 50px;font-weight: bolder;font-family: "name";}
 .content {white-space: pre-line;font-size: 16px;font-family: "content";line-height: 30px;padding: 5px;}
 .strong {font-family: "strong";margin: 10px 0 0 0;font-weight: bolder;font-size: 36px;}
-
 .tag-list {display: flex;align-items: center;flex-flow: row wrap;margin: 10px 0 10px 0;}
 .tags {padding: 5px 15px 5px 15px;color: grey;background: #f6f7f9;width: max-content;border-radius: 50px;cursor: pointer;margin: 10px;font-family: "Mulish";display: flex;align-items: center;font-size: 14px;}
 .tag-list svg {padding: 0px 5px 0px 5px;width: 15px;}
-
 .social-links {display: flex;flex-flow: row wrap;font-family: "Bebas Neue";}
 .social-links .links {display: flex;align-items: center;margin: 5px 10px 5px 10px;cursor: pointer;}
 .social-links a {text-decoration: underline;color: var(--clr-blue);}
 .social-links svg {width: 15px;padding: 5px;fill: var(--clr-blue);}
-
-.meta {display: flex;align-items: center;padding: 5px 10px 5px 10px;color: grey;margin: 10px 5px 10px 5px;font-family: "Mulish";}
+.meta {display: flex;align-items: center;padding: 5px 10px 5px 10px;color: grey;margin: 10px 5px 10px 5px;font-family: "Mulish";font-size: 14px;}
 .meta svg {width: 15px;fill: grey;padding: 0 5px 0 5px;}
-
-@media screen and (max-width:500px) {section {padding: 30px;}}
+@media screen and (max-width:1000px) {section {padding: 30px;justify-content: start;}}
+@media screen and (max-width:500px) {section {padding: 30px;justify-content: center;} .strong {font-size: 30px;}}
