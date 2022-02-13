@@ -9,15 +9,13 @@
         @font-face {font-family: "default";src: url("fonts/Kanit-Regular.ttf");}
         * {margin: 0;transition: 0.6s;scroll-behavior: smooth;overflow: auto;font-family: "default";letter-spacing: 1px;line-height: 40px;}
         ::selection {background: green;color: white;}
-        body {top: 50%;left: 50%;position: absolute;transform: translate(-50%, -50%);-ms-transform: translate(-50%, -50%);-webkit-transform: translate(-50%, -50%)}
+        .__main__ {display: flex;align-items: center;justify-content: center;min-height: 100vh;flex-direction: column;}
         a {color: unset;text-decoration: underline;font-weight: 600;}
         a:hover {color: green;}
-        .__main__ {width: fit-content;}
-        .para_text {white-space: pre-line;font-size: 20px;}
+        .para_text {white-space: pre-line;font-size: 20px;padding: 10px;}
         .footer {display: flex;align-items: center;margin: 30px 0 0 0;font-size: 12px;color: gray;}
         .footer a {color: unset;text-decoration: underline;cursor: pointer;font-size: 12px;font-weight: unset;padding: 0 10px 0 10px;}
         .footer a:hover {color: white;}
-        @media screen and (max-width:700px) { .para_text {font-size: 18px;} }
         @media (prefers-color-scheme: dark) {body {background-color: #181818;color: white;}}
         @media (prefers-color-scheme: light) {body {background-color: white;color: black;}}
     </style>
