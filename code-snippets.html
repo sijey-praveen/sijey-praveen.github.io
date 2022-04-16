@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Snippets</title>
+    <!-- <link rel="shortcut icon" href="" type="image/png"> -->
+    <style>
+        @font-face {font-family: "Roboto Condensed";src: url("fonts/RobotoCondensed-Regular.ttf");}
+        * {margin: 0;font-family: "Roboto Condensed";}
+        div[code] {white-space: pre-wrap;text-align: left;font-family: Calibri;font-size: 14px;background: #eeeeee;color: #595959;padding: 10px;box-sizing: border-box;letter-spacing: 1px;line-height: 28px;margin: 10px 0 0 0;width: 800px;height: max-content;overflow: auto;border: 1px solid #cccccc;padding: 5px;}
+        .__main__ {border: 1px solid #cccccc;padding: 10px;width: max-content;height: max-content;border-radius: 3px;margin: 10px;}
+        @media screen and (max-width:500px) { div[code] {width: 320px;} h1 {font-size: 18px;} }
+    </style>
+</head>
+<body>
+    <div class="__main__">
+        <div>
+            <h1>Get Free Weather Forecast Data</h1>
+            <div code>from requests import get
+from bs4 import BeautifulSoup
+from urllib.parse import quote, urlparse
+
+def weather(location : str = None):
+    url = "https://www.google.com/search?hl=en&num=1&q=weather%20{}%20celcius".format(quote(location))
+    try : return BeautifulSoup(get(url).text, "html.parser").find("div", attrs={"class" : "BNeawe iBp4i AP7Wnd"}).text
+    except Exception : return dict(message = "No Result Found!")
+
+print(weather("london"))
+>>> 13°C</div>
+        </div>    
+    </div>
+</body>
+</html>
