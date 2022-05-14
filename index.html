@@ -17,8 +17,8 @@
         .container {width: 600px;padding: 10px;margin: 10px;box-sizing: border-box;}
         .row {display: flex;align-items: center;}
         .profile-picture {width: 100px;height: 100px;border-radius: 50%;margin: 10px 0 10px 0;border: 5px solid #ebedf0;}
-        .name {font-size: 26px;font-weight: bolder;padding: 0 5px 0 0;}
-        .text {white-space: pre-line;font-size: 18px;}
+        .name {font-size: 26px;font-weight: bolder;padding: 0 5px 0 0;animation: fadeIn 1s ease-in-out;overflow-x: hidden;}
+        .text {white-space: pre-line;font-size: 18px;animation: fadeDown 1s ease-in-out;}
         svg {width: 20px;height: 20px;display: inline-block;}
         a {color: unset;font-weight: 600;cursor: pointer;text-decoration: none;}
         a:hover {text-decoration: underline;}
@@ -26,6 +26,8 @@
         @media (prefers-color-scheme: light) {body {background-color: white;color: black;} ::selection {background: black;color: white;}}
         @media screen and (max-width:700px) {.__main__ {width: 510px;}}
         @media screen and (max-width:500px) {.__main__ {width: 310px;}}
+        @keyframes fadeIn {0% {opacity: 0;} 100% {opacity: 1;}}
+        @keyframes fadeDown {0% {transform: translateY(10px);opacity: 0.1;} 100% {transform: translateY(0);opacity: 1;}} 
     </style>
 </head>
 <body>
@@ -35,13 +37,13 @@
             <div class="name">Sijey Praveen</div>
             <svg viewBox="0 0 24 24"><g><path fill="#3897f0" d="M22.5 12.5c0-1.58-.875-2.95-2.148-3.6.154-.435.238-.905.238-1.4 0-2.21-1.71-3.998-3.818-3.998-.47 0-.92.084-1.336.25C14.818 2.415 13.51 1.5 12 1.5s-2.816.917-3.437 2.25c-.415-.165-.866-.25-1.336-.25-2.11 0-3.818 1.79-3.818 4 0 .494.083.964.237 1.4-1.272.65-2.147 2.018-2.147 3.6 0 1.495.782 2.798 1.942 3.486-.02.17-.032.34-.032.514 0 2.21 1.708 4 3.818 4 .47 0 .92-.086 1.335-.25.62 1.334 1.926 2.25 3.437 2.25 1.512 0 2.818-.916 3.437-2.25.415.163.865.248 1.336.248 2.11 0 3.818-1.79 3.818-4 0-.174-.012-.344-.033-.513 1.158-.687 1.943-1.99 1.943-3.484zm-6.616-3.334l-4.334 6.5c-.145.217-.382.334-.625.334-.143 0-.288-.04-.416-.126l-.115-.094-2.415-2.415c-.293-.293-.293-.768 0-1.06s.768-.294 1.06 0l1.77 1.767 3.825-5.74c.23-.345.696-.436 1.04-.207.346.23.44.696.21 1.04z"></path></g></svg>
         </div>
-        <div class="text">I'am a Student doing <a href="https://en.wikipedia.org/wiki/Diploma_in_Engineering">Diploma in Computer Science Engineering</a>.
-            Currently learning <a href="https://en.wikipedia.org/wiki/Web_development">Web Development</a> and <a target="_blank" href="https://en.wikipedia.org/wiki/Go_(programming_language)">Go Programming Language</a>.
-            Skilled at <a href="https://en.wikipedia.org/wiki/Python_(programming_language)">Python</a>, <a href="https://en.wikipedia.org/wiki/JavaScript">JavaScript</a>, <a href="https://en.wikipedia.org/wiki/HTML">HTML</a>, <a href="https://en.wikipedia.org/wiki/CSS">CSS</a>, <a href="https://en.wikipedia.org/wiki/JSON">JSON</a>, <a href="https://en.wikipedia.org/wiki/API">API</a> & Intregrations, <a href="https://en.wikipedia.org/wiki/Web_scraping">Web Scraping</a>, Automation, <a href="https://en.wikipedia.org/wiki/Object-oriented_programming">Object Oriented Programming</a>, etc...
-            Hired at <a target="_blank" href="https://github.com/peregrine-lang/">Peregrine Lang</a> as a <a href="https://en.wikipedia.org/wiki/Web_developer">Web Developer</a>.
-            I &#10084;&#65039; <a target="_blank" href="https://en.wikipedia.org/wiki/Open_source">Open-source</a>, You can check some of my Open-source stuffs at <a target="_blank" href="https://github.com/sijey-praveen/">GitHub</a>, <a target="_blank" href="https://replit.com/@Sijey">Replit</a>, <a target="_blank" href="https://pypi.org/user/Sijey/">Python  Package Index (PyPI)</a>.
+        <div class="text">I'am a Student doing <a target="_blank" href="https://en.wikipedia.org/wiki/Diploma_in_Engineering">Diploma in Computer Science Engineering</a>.
+            Currently learning <a target="_blank" href="https://en.wikipedia.org/wiki/Web_development">Web Development</a> and <a target="_blank" href="https://en.wikipedia.org/wiki/Go_(programming_language)">Go Programming Language</a>.
+            Skilled at <a target="_blank" href="https://en.wikipedia.org/wiki/Python_(programming_language)">Python</a>, <a target="_blank" href="https://en.wikipedia.org/wiki/JavaScript">JavaScript</a>, <a target="_blank" href="https://en.wikipedia.org/wiki/HTML">HTML</a>, <a target="_blank" href="https://en.wikipedia.org/wiki/CSS">CSS</a>, <a target="_blank" href="https://en.wikipedia.org/wiki/JSON">JSON</a>, <a target="_blank" href="https://en.wikipedia.org/wiki/API">API</a> & Intregrations, <a target="_blank" href="https://en.wikipedia.org/wiki/Web_scraping">Web Scraping</a>, Automation, <a target="_blank" href="https://en.wikipedia.org/wiki/Object-oriented_programming">Object Oriented Programming</a>, etc...
+            Hired at <a target="_blank" href="https://github.com/peregrine-lang/">Peregrine Lang</a> as a <a target="_blank" href="https://en.wikipedia.org/wiki/Web_developer">Web Developer</a>.
+            I Love <a target="_blank" href="https://en.wikipedia.org/wiki/Open_source">Open-source</a>, You can check some of my Open-source Projects at <a target="_blank" href="https://github.com/sijey-praveen/">GitHub</a>, <a target="_blank" href="https://replit.com/@Sijey">Replit</a>, <a target="_blank" href="https://pypi.org/user/Sijey/">Python  Package Index (PyPI)</a>.
             I Speak Tamil and English.
-            &#128516; Wanna Contact me? Reach me via <a target="_blank" href="mailto:cjpraveen@hotmail.com">&#128231; Email</a>.    
+            For Enquiries, Reach me via <a target="_blank" href="mailto:cjpraveen@hotmail.com">Email</a>.    
         </div>
     </div>
 </body>
