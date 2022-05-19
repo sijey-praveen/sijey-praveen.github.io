@@ -1,0 +1,11 @@
+@font-face {font-family: "normal";src: url("RobotoMono-Regular.ttf");}
+@font-face {font-family: "code";src: url("SourceCodePro-Light.ttf");}
+*, *::after, *::before {margin: 0;box-sizing: border-box;font-family: "normal";scrollbar-width: thin;}
+*::-webkit-scrollbar {width: 9px;}
+body {background-color: #161719;color: #ffffff;}
+.hz-center {display: flex;flex-direction: column;justify-content: center;align-items: center;}
+.content {background-color: #26272b;max-width: 800px;min-width: 300px;padding: 10px;margin: 10px;min-height: 100px;max-height: 600px;width: 800px;}
+.content .code {font-family: "code";white-space: pre;color: #9fa2a7;text-align: left;letter-spacing: 1px;padding: 10px;overflow: auto;}
+@media screen and (max-width:800px) {.content {width: 500px;}}
+@media screen and (max-width:500px) {.content {width: 300px;}}
+@media screen and (max-width:280px) {.content {width: 200px;}}
