@@ -9,7 +9,7 @@ function _Request(url) {
     return response
 }
 
-const data = _Request("data.json")
+const data = JSON.parse(_Request("data.json"))
 
 for (let i = 0; i < data.length; i++) {
     const content = document.createElement("div")
