@@ -20,7 +20,7 @@ Developer : Sijey (cjpraveen@hotmail.com)
         body {display: flex;flex-direction: column;justify-content: center;align-items: center;}
         a {color: unset;font-weight: 600;cursor: pointer;text-decoration: none;}
         a:hover {text-decoration: underline;}
-        .container {width: 600px;padding: 10px;margin: 10px;box-sizing: border-box;position: relative;}
+        .container {width: 80vw;padding: 10px;margin: 10px;box-sizing: border-box;position: relative;}
         .row {display: flex;align-items: center;}
         .profile-picture {width: 100px;height: 100px;border-radius: 50%;margin: 10px 0 10px 0;border: 5px solid #ebedf0;}
         .name {font-size: 38px;font-weight: bolder;padding: 0 5px 0 0;animation: fadeUp 1s ease-in-out;font-family: "bold";}
@@ -29,11 +29,8 @@ Developer : Sijey (cjpraveen@hotmail.com)
         .social {margin: 10px 0 0 0;}
         .social svg {height: 25px;width: 25px;padding: 0 5px 0 5px;cursor: pointer;}
         .social a:hover {text-decoration: none;}
-        @media screen and (max-width:700px) {.container {width: 500px;}}
-        @media screen and (max-width:500px) {.container {width: 350px;}}
-        @media screen and (max-width:280px) {.container {width: 250px;}}
-        @media (prefers-color-scheme: dark) {body {background-color: #181818;color: #ffffff;} ::selection {background: #ffffff;color: #000000;} .contextmenu {background-color: #282828;color: #ffffff;} .social svg {fill: #ffffff;}}
-        @media (prefers-color-scheme: light) {body {background-color: #ffffff;color: #000000;} ::selection {background: #000000;color: #ffffff;} .contextmenu {background-color: #f5f5f5;color: #373737;} .social svg {fill: #000000;}}
+        @media (prefers-color-scheme: dark) {body {background-color: #181818;color: #ffffff;} ::selection {background: #ffffff;color: #000000;} .social svg {fill: #ffffff;}}
+        @media (prefers-color-scheme: light) {body {background-color: #ffffff;color: #000000;} ::selection {background: #000000;color: #ffffff;} .social svg {fill: #000000;}}
         @keyframes fadeDown {0% {transform: translateY(10px);opacity: 0.1;} 100% {transform: translateY(0);opacity: 1;}} 
         @keyframes fadeUp {0% {transform: translateY(-10px);opacity: 0.1;} 100% {transform: translateY(0);opacity: 1;}}
     </style>
