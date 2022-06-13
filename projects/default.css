@@ -1,11 +1,11 @@
 @font-face {
     font-family: "Black";
-    src: url("/Roboto-Black.ttf");
+    src: url("/projects/Roboto-Black.ttf");
 }
 
 @font-face {
     font-family: "Regular";
-    src: url("/Roboto-Regular.ttf");
+    src: url("/projects/Roboto-Regular.ttf");
 }
 
 *, *::after, *::before {
