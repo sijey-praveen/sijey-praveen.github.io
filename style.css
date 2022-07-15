@@ -48,7 +48,7 @@ h3 {
     margin: 10px 0;
 }
 
-h3::after {
+h3:first-child::after {
     display: inline-block;
     content: "";
     width: 40%;
