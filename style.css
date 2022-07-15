@@ -40,11 +40,12 @@ body {
 
 h1 {
     font-size: 56px;
-    margin: 5px 0 30px 0;
+    margin: 5px 0;
 }
 
 h3 {
     color: #cccccc;
+    margin: 10px 0;
 }
 
 h3::after {
@@ -61,6 +62,8 @@ p {
     color: #b3b3b3;
     font-size: 16px;
     line-height: 30px;
+    white-space: pre-line;
+    margin: 12px 0;
     animation: up 1s ease;
 }
 
@@ -76,12 +79,6 @@ section {
     max-width: 800px;
     min-width: 300px;
     padding: 64px 15px 15px 15px;
-}
-
-@keyframes hl {
-    to {
-        background-position: 400% 0;
-    }
 }
 
 @keyframes up {
